@@ -2234,4 +2234,77 @@ button:hover {
         height: 50vw;
     }
 }
+@media (max-width: 265px) {
+    /* .container {
+        background-color: aquamarine;
+    } */
+    /* HAMBURGER MENU */
+    .hamburger-menu {
+        margin-left: 75%;
+    }
+    /* SLIDESHOW */
+    .main {
+        width: 90%;
+    }
+    /* NEWS */
+    .section-news {
+        height: 300vw;
+    }
+    .music-img {
+        width: 55vw;
+    }
+    .gallery {
+        height: 200vw;
+        transform: translateX(-3%);
+    }
+    .music-name {
+        visibility: hidden;
+    }
+    /* ARTISTS */
+    .section-artists {
+        width: 57%;
+    }
+    .readmoretext {
+        font-size: .7rem;
+        height: 20%;
+    }
+    /* CONTACT */
+    .section-mailinglist {
+        height: 200vw;
+    }
+    .form-container {
+        width: 95%;
+        margin-right: 8%;
+    }
+    /* DISCOGRAPHY */
+    .cd-common {
+        margin-right: 10%;
+    }
+    .readmore-common {
+        margin-right: 14%;
+    }
+    /* ABOUT */
+    .section-about {
+        height: 960vw;
+        width: 92%;
+    }
+    .card-common {
+        width: 70%;
+    } 
+    /* FOOTER */
+    .footer-logo {
+        margin-right: 10%;
+    }
+    .footer-icons {
+        margin-right: 10%;
+    }
+    .footer-subtitle {
+        margin-right: 10%;
+    }
+    .copyright {
+        margin-right: 10%;
+    }
+}
+
+
 
