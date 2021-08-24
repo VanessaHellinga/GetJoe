@@ -1465,7 +1465,7 @@ button:hover {
         padding-left: 28%;
     }
     .mini-nav-link {
-        height: 6vw;
+        height: 7vw;
         font-size: 2.5rem;
     }
     /* MAIN SECTION */
@@ -1673,14 +1673,7 @@ button:hover {
         padding-left: 28%;
     }
     .mini-nav-link {
-        height: 5.5vw;
         font-size: 2.2rem;
-    }
-    .right {
-        font-size: 3rem;
-    }
-    .left {
-        font-size: 3rem;
     }
     /* MAIN */
     .content {
@@ -1692,6 +1685,12 @@ button:hover {
     .content p {
         font-size: 1.5rem;
         font-weight: 500;
+    }
+    .right {
+        font-size: 3rem;
+    }
+    .left {
+        font-size: 3rem;
     }
      /* NEWS */
     .section-news {
@@ -1852,8 +1851,8 @@ button:hover {
         height: .28rem;
     }
     .mini-nav-link {
-        height: 8vw;
-        font-size: 1.6rem;
+        height: 9vw;
+        font-size: 1.8rem;
     }
     /* MAIN SECTION */
     .main {
@@ -2065,6 +2064,10 @@ button:hover {
     /* .container {
         background-color: grey;
     } */
+    /* HAMBURGER MENU */
+    .mini-nav-link {
+        height: 10vw;
+    }
     /* NEWS */
     .gallery-link {
         transform: translateX(10%);
@@ -2075,12 +2078,12 @@ button:hover {
         height: 85%;
     }
     .gallery-link::after{
-        width: 100%;
+        width: 99%;
         top: 25%;
         left: 6%;
     }
     .gallery-link:hover::after {
-        width: 100%;
+        width: 99%;
     }
     /* ARTISTS */
     .artists-common {
