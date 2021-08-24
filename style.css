@@ -2075,12 +2075,12 @@ button:hover {
         height: 85%;
     }
     .gallery-link::after{
-        width: 105%;
+        width: 100%;
         top: 25%;
         left: 6%;
     }
     .gallery-link:hover::after {
-        width: 105%;
+        width: 100%;
     }
     /* ARTISTS */
     .artists-common {
