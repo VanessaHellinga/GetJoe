@@ -1270,9 +1270,9 @@ button:hover {
 
 /* MEDIA QUERIES */
 @media (max-width: 1560px) {
-    /* .container {
+    .container {
         background-color: darkred;
-    } */
+    }
     .navbar-links a, li {
         font-size: 2rem;
     }
@@ -1288,7 +1288,7 @@ button:hover {
      /* ABOUT */
      .card-common {
         width: 80%;
-        height: 60%;
+        height: 65%;
         margin-left: 8%;
     }
      .experience {
@@ -1296,17 +1296,18 @@ button:hover {
         height: 93%;  
     }
     .experience-heading {
-        top: 12%;
+        top: 18%;
     }
     .resume {
         font-size: 1.9rem;
+        text-indent: 1.9rem;
     }
 }
 
 @media (max-width: 1415px) {
-    /* .container {
+    .container {
         background-color: blue;
-    } */
+    }
     .navbar-links a, li {
         padding: 0 1rem 0 2rem;
     }
@@ -1345,7 +1346,7 @@ button:hover {
     }
     .experience-heading {
         font-size: 3rem;
-        top: 10%;
+        
     }
     .resume {
         font-size: 1.8rem;
@@ -1354,9 +1355,9 @@ button:hover {
 }
 
 @media (max-width: 1215px) {
-    /* .container {
+    .container {
         background-color: seagreen;
-    } */
+    }
     .navbar-links a, li {
         padding: 0 1rem;
     }
@@ -1431,12 +1432,10 @@ button:hover {
     }
     .experience {
         width: 89%;
-        height: 92%;  
     }
     .resume {
         font-size: 1.6rem;
         text-indent: 1rem;
-        padding-left: 1.3rem;
     }
     /* SCROLL UP BTN */
     .scroll-up-btn {
@@ -1448,9 +1447,9 @@ button:hover {
 
 /* IPAD PRO */
 @media (max-width: 1024px)  {
-    /* .container {
+    .container {
         background-color:yellow;
-    } */
+    }
     /* HAMBURGER MENU */
     .nav {
         visibility: hidden;
@@ -1629,6 +1628,7 @@ button:hover {
         100%{ margin-left: 152%;}
     }
     .card-common {
+        width: 77%;
         height: 77%;
     }
     .experience-btn {
@@ -1637,6 +1637,9 @@ button:hover {
     }
     .experience {
         width: 88%;
+    }
+    .experience-heading {
+        top: 15%;
     }
     .resume {
         font-size: 1.7rem;
@@ -1652,9 +1655,9 @@ button:hover {
 
 /* IPAD */
 @media (max-width: 796px) {
-    /* .container {
+    .container {
         background-color: hotpink;
-    } */
+    }
     /* HAMBURGER MENU */
     .nav {
         visibility: hidden;
@@ -1735,9 +1738,6 @@ button:hover {
     .artists-logo {
         margin-top: 15rem;
     }
-    .artists-common {
-        width: 25%;
-    }
     .readmoretext {
         font-size: 1.6rem;
         line-height: 5rem;
@@ -1808,9 +1808,7 @@ button:hover {
         100%{ margin-left: 145%;}
     }
     .card-common {
-        width: 58%;
-        height: 75%;
-        padding: 1rem;
+        width: 55%;
         margin-left: 0;
         justify-self: center;
     }
@@ -1821,14 +1819,11 @@ button:hover {
         font-size: 1.5rem;
     }
     .experience {
-        width: 91.5%;
+        width: 89%;
     }
     .experience-heading {
-        font-size: 3rem;
-    }
-    .resume {
-        font-size: 2rem;
-        padding-left: 1rem;
+        font-size: 2.5rem;
+        top: 10%;
     }
     /* FOOTER */
     .footer {
@@ -1841,9 +1836,9 @@ button:hover {
 }
 
 @media (max-device-width: 568px) {
-    /* .container {
+    .container {
         background-color: green;
-    } */
+    }
     /* HAMBURGER MENU */
     .hamburger-menu {
         margin-left: 84%;
@@ -2011,16 +2006,11 @@ button:hover {
     .about-logo {
         width: 50%;
     }
-    .card-common {
-        height: 78%;
-        width: 65%;
-        padding-bottom: 1rem;
-    }
     .about-heading {
         font-size: 2.5rem;
     }
-    .profile-img {
-        width: 99%;
+    .card-common {
+        height: 75%;
     }
     .name {
         font-size: 1.5rem;
@@ -2034,11 +2024,9 @@ button:hover {
     }
     .experience {
         width: 86%;
-        height: 95%;
     }
     .experience-heading {
-        top: 10%;
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
     .resume {
         font-size: 1.4rem;
@@ -2074,9 +2062,9 @@ button:hover {
 }
 
 @media (max-width: 477px) {
-    /* .container {
+    .container {
         background-color: grey;
-    } */
+    }
     /* NEWS */
     .gallery-link {
         transform: translateX(10%);
@@ -2094,12 +2082,23 @@ button:hover {
     .gallery-link:hover::after {
         width: 98%;
     }
+    /* ABOUT */
+    .experience {
+        width: 84%;
+    }
+    .experience-heading {
+        font-size: 1.8rem;
+    }
+    .resume {
+        font-size: 1.2rem;
+        text-indent: .5rem;
+    }
 }
 
 @media (max-width: 375px) {
-    /* .container {
+    .container {
         background-color: goldenrod;
-    } */
+    }
     /* NEWS */
       .news-title {
         font-size: 2.5rem;
@@ -2139,13 +2138,13 @@ button:hover {
         padding-bottom: 2rem;
     }
     .experience {
-        width: 85%;
+        width: 81%;
     }
     .experience-heading {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     .resume {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     /* FOOTER */
     .decoration-footer {
@@ -2161,9 +2160,9 @@ button:hover {
 }
 /* IPHONE 5 */
   @media (max-width: 320px) {
-    /* .container {
+    .container {
         background-color: #FF5E00;
-    } */
+    }
     /* HAMBURGER MENU */
     .hamburger-menu {
         height: 20px;
@@ -2249,15 +2248,21 @@ button:hover {
         margin-top: 5rem;
     }
     .card-common {
-        width: 59%;
-        height: 70%;
+        height: 72%;
+    }
+    .name {
+        font-size: 1.3rem;
+    }
+    .experience-btn {
+        height: 1.2rem;
+        width: 1.2rem;
     }
     .experience {
-        width: 80%;
-        height: 105%;
+        width: 79%;
+        height: 97%;
     }
     .resume {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     /* FOOTER */
     .footer {
@@ -2265,9 +2270,9 @@ button:hover {
     }
 }
 @media (max-width: 265px) {
-    /* .container {
+    .container {
         background-color: aquamarine;
-    } */
+    }
     /* HAMBURGER MENU */
     .hamburger-menu {
         margin-left: 75%;
@@ -2319,6 +2324,9 @@ button:hover {
     .card-common {
         width: 70%;
     } 
+    .job-title {
+        font-size: 1rem;
+    }
     /* FOOTER */
     .footer-logo {
         margin-right: 10%;
@@ -2333,9 +2341,3 @@ button:hover {
         margin-right: 10%;
     }
 }
-<<<<<<< HEAD
-=======
-
-
->>>>>>> e7648629d540f3d4b3263ef6e1443aa15ae3d76e
-
