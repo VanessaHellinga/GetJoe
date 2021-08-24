@@ -488,17 +488,16 @@ button:hover {
 }
 
 .artists-common {
-    width: 20%;
-    height: 70%;
     border-radius: 50%;
     justify-self: center;
     align-self: center;
     border: solid 2rem #AAACC1;
     border-style: double;  
+    margin: 5rem;
 }
 
 .readmoretext {
-    transform: translateY(100%);
+    transform: translateY(10%);
     text-align: center;
     font-size: 3rem;
     color: #FFFFFF;
@@ -512,11 +511,8 @@ button:hover {
     justify-self: center;
     align-self: center;
     text-decoration: none;
-    border-radius: 50%;
     border: none;
     opacity: 0;
-    width: 20%;
-    height: 70%;
     background-color: #0A0405;
 }
 
@@ -1327,12 +1323,15 @@ button:hover {
         font-weight: 600;
     }
     /* ARTISTS */
+    .section-artists {
+        height: 60vw;
+    }
     .artists-common {
         border: solid 1.5rem #AAACC1;
-        border-style: double;  
+        border-style: double; 
+        width: 25%; 
     }
     .readmoretext {
-        transform: translateY(80%);
         font-size: 2.5rem;
     }
     /* ABOUT */
@@ -1384,6 +1383,9 @@ button:hover {
         font-size: 2.8rem;  
     }  
     /* ARTISTS */
+    .artists-logo {
+        margin-top: 10rem;
+    }
     .artists-common {
         border: solid 1.2rem #AAACC1;
         border-style: double;  
@@ -1543,17 +1545,12 @@ button:hover {
         height: 300vh;
     } */
     .section-artists {
-        height: 95vw;
-    }
-    .artists-logo {
-        width: 70%;
+        height: 65vw;
     }
     .artists-common {
-        width: 38%;
-        height: 65%;
+        width: 30%;
     }
     .readmoretext {
-        transform: translateY(20%);
         font-size: 1.8rem;
         line-height: 10rem;
     }
@@ -1696,6 +1693,7 @@ button:hover {
      /* NEWS */
     .section-news {
         grid-template-rows: .1fr 1fr .1fr;
+        height: 160vw;
     }
     .gallery-link {
         width: 75%;
@@ -1707,6 +1705,7 @@ button:hover {
     .gallery-link::before{
         top: 3vw;
         height: 82%;
+        left: 70%
     }
     .gallery-link::after{
         width: 70%;
@@ -1730,12 +1729,14 @@ button:hover {
         font-size: 1.8rem;
     }
     /* ARTSTS */
-    .artists-common {
-        width: 33%;
+    .section-artists {
+        height: 85vw;
     }
-    .bio1 {
-        background-color: transparent;
-        opacity: 1;
+    .artists-logo {
+        margin-top: 15rem;
+    }
+    .artists-common {
+        width: 25%;
     }
     .readmoretext {
         font-size: 1.6rem;
@@ -1894,20 +1895,20 @@ button:hover {
         height: 150vw;
     }
     .gallery-link {
-        transform: translateX(5%);
+        transform: translateX(15%);
     }
     .gallery-link::before{
         top: 5vw;
-        left: 100%;
+        left: 90%;
         height: 80%;
     }
     .gallery-link::after{
-        width: 101%;
+        width: 93%;
         top: 25%;
         left: 6%;
     }
     .gallery-link:hover::after {
-        width: 101%;
+        width: 93%;
     }
     .music-img {
         width: 60vw;
@@ -1931,7 +1932,7 @@ button:hover {
     }
     .artists-logo {
         margin-top: 5rem;
-        width: 100%;
+        width: 90%;
     }
     .artists-title {
         margin-top: 5rem;
@@ -1939,18 +1940,11 @@ button:hover {
         padding-bottom: 2rem;
     }
     .artists-common {
-        width: 65%;
-        height: 95%;
         border: .6rem solid #AAACC1;
         border-style: double;
-    }
-    .bio1 {
-        width: 65%;
-        opacity: 1;
-        background-color: transparent;
+        width: 40%;
     }
     .readmoretext {
-        transform: translateY(20%);
         font-size: 1.2rem;
         line-height: 5rem;
     }
@@ -2079,6 +2073,29 @@ button:hover {
     }
 }
 
+@media (max-width: 477px) {
+    /* .container {
+        background-color: grey;
+    } */
+    /* NEWS */
+    .gallery-link {
+        transform: translateX(10%);
+    }
+    .gallery-link::before{
+        top: 3vw;
+        left: 95%;
+        height: 85%;
+    }
+    .gallery-link::after{
+        width: 98%;
+        top: 25%;
+        left: 6%;
+    }
+    .gallery-link:hover::after {
+        width: 98%;
+    }
+}
+
 @media (max-width: 375px) {
     /* .container {
         background-color: goldenrod;
@@ -2098,8 +2115,7 @@ button:hover {
         transform: translateX(2%);
     }
     .gallery-link::before{
-        top: 3vw;
-        height: 85%;
+        left: 102%;
     }
     .gallery-link::after{
         width: 105%;
@@ -2108,8 +2124,11 @@ button:hover {
         width: 105%;
     }
     /* ARTISTS */
-    .bio1 {
-        height: 70%;
+    .section-artists {
+        height: 110vw;
+    }
+    .artists-common {
+        width: 55%;
     }
     /* DISCOGRAPHY */
     .cd-common {
@@ -2159,6 +2178,10 @@ button:hover {
     .mini-nav-link {
         height: 9vw;
     }
+    /* SLIDESHOW */
+    .main {
+        width: 97%;
+    }
     /* NEWS */
     .music-name {
         font: 1.2rem;
@@ -2168,7 +2191,7 @@ button:hover {
         height: 250vw;
     }
     .gallery-link {
-        transform: translateX(0%);
+        transform: translateX(-1%);
     }
     .gallery-link::before{
         left: 105%;
@@ -2189,18 +2212,25 @@ button:hover {
         bottom: 1vw;
         padding-bottom: .6rem;
     }
+    .more {
+        transform: translateX(-2%);
+    }
     /* ARTISTS */
     .section-artists {
-        height: 105vw;
+        height: 120vw;
     }
-    .bio1 {
-        height: 80%;
+    .artists-common {
+        width: 60%;
     }
     /* CONTACT */
     .section-mailinglist {
       height: 150vw;
+      transform: translateX(-2%);
     }
     /* DISCOGRAPHY */
+    .section-discography {
+        transform: translateX(-2%);
+    }
     .cd-common {
         width: 55%;
         height: 50%;
@@ -2219,15 +2249,15 @@ button:hover {
         margin-top: 5rem;
     }
     .card-common {
-      width: 61%;
-      height: 70%;
+        width: 59%;
+        height: 70%;
     }
     .experience {
-      width: 80%;
-      height: 105%;
+        width: 80%;
+        height: 105%;
     }
     .resume {
-      font-size: 1.1rem;
+        font-size: 1.1rem;
     }
     /* FOOTER */
     .footer {
@@ -2262,19 +2292,17 @@ button:hover {
     }
     /* ARTISTS */
     .section-artists {
-        width: 57%;
+        height: 128vw;
+    }
+    .artists-common {
+        width: 62%;
     }
     .readmoretext {
         font-size: .7rem;
-        height: 20%;
     }
     /* CONTACT */
     .section-mailinglist {
         height: 200vw;
-    }
-    .form-container {
-        width: 95%;
-        margin-right: 8%;
     }
     /* DISCOGRAPHY */
     .cd-common {
