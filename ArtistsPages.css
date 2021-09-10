@@ -1,0 +1,584 @@
+/* COMMON STYLES */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    background-color: #0A0405;
+}
+
+.container {
+    display: grid;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: #0A0405;
+}
+
+
+/* NAVBAR */
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'logo heading heading navbar'
+    'logo heading heading navbar-icons';
+    height: 25vh;
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+    background-color: #0A0405;
+    border-bottom: .1rem solid #CC2026;
+}
+
+.invisible-home-link {
+    grid-area: logo;
+    color: red;
+    background-color: white;
+    justify-self: center;
+    align-self: center;
+    z-index: 99;
+    opacity: 0;
+    font-size: 6rem;
+}
+
+.logo {
+    grid-area: logo;
+    width: 11.5vw;
+    justify-self: center;
+    align-self: center;
+}
+
+/* .heading {
+    grid-area: heading;
+    font-size: 5rem;
+    align-self: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+} */
+
+.navbar {
+    grid-area: navbar;
+    justify-self: center;
+    align-self: end;
+}
+
+.navbar-links a, li {
+    display: inline-flex;
+    text-decoration: none;
+    list-style-type: none;
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    padding: 0 1rem 0 3rem;
+    transition: transform .8s;
+}
+
+.navbar-links:hover {
+    border-bottom: .3rem solid #CC2026;
+    transform: translateY(-1rem);
+}
+
+.navbar-icons {
+    grid-area: navbar-icons;
+    justify-self: center;
+    align-self: center;
+}
+
+.icons a {
+    color: white;
+}
+
+/* HAMBURGER MENU */
+.mini-nav {
+    visibility: hidden;
+    
+    /* visibility: visible; */
+}
+.mini-logo-container {
+    background-color: #0A0405;
+    
+    justify-content: center;
+}
+
+.mini-logo {
+    width: 2%;
+}
+
+.hamburger-menu {
+    /* position: fixed; */
+    /* top: 40px; */
+    /* right: 50px; */
+    margin-left: 90%;
+    width: 35px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.line {
+    width: inherit;
+    height: 5px;
+    background-color: #CC2026;
+    border-radius: 25px;
+    transform-origin: right;
+    transition: transform .5s;
+    z-index: 99;
+}
+
+.line-2 {
+    height: 3px;
+    z-index: 99;
+}
+
+.change .line-1 {
+    transform: rotateZ(-45deg);
+    z-index: 99;
+}
+
+.change .line-2 {
+    transform: translate(5px, 20px);
+    z-index: 99;
+}
+
+.change .line-3 {
+    transform: rotateZ(45deg);
+    z-index: 99;
+}
+
+.top-nav {
+    /* position: fixed; */
+    /* top: -30vh; */
+    width: 100%;
+    transform: translateY(-400%);
+    z-index: 5;
+    transition: transform 2s;
+}
+
+.change .top-nav {
+    /* top: 0; */
+    transform: translateY(0%);
+}
+
+.mini-nav-list {
+    display: grid;
+    width: 100%;
+    background-color: #0A0405;
+}
+
+.mini-nav-link {
+    background-color: #0A0405;
+    color: #FFFFFF;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+
+.mini-nav-link:hover {
+    color: #CC2026; 
+    /* border-bottom: .1rem solid white;
+    border-top: .1rem solid white; */
+    text-decoration: underline;
+    font-weight: 700;
+    letter-spacing: .1rem;
+}
+
+/* MAIN SECTION */
+
+.main {
+    display: grid;
+    background-color: #0A0405;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 1fr 5fr;
+    grid-template-areas:
+    'image'
+    'title'
+    'article';
+    height: 160vh;
+    width: 100%;
+}
+
+.RB-img {
+    grid-area: image;
+    width: 50%;
+    justify-self: center;
+    padding-top: 5%;
+}
+
+.title {
+    grid-area: title;
+    justify-self: center;
+    align-self: center;
+    font-size: 5rem;
+    color: #FFFFFF;
+}
+
+.article {
+    grid-area: article;
+    letter-spacing: .1rem;
+    font-size: 3rem;
+    text-indent: 2rem;
+    padding: 3rem 10rem;
+    color: #FFFFFF;
+}
+
+.artist-website {
+    color: white;
+}
+
+.artist-website:hover {
+    color: #AAACC1;
+}
+
+/* FOOTER */
+.footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr .5fr;
+    grid-template-areas: 
+    'logofoot'
+    'iconsfoot'
+    'subtitlefoot'
+    'copyright';
+    height: 50vh;
+}  
+
+.decoration-footer {
+    grid-area: logofoot;
+    border-top: 1.5rem solid #AAACC1;
+    border-style: double;
+    border-bottom: #172601;
+    border-left: #172601;
+    border-right: #172601;
+}
+
+.footer-logo{
+    grid-area: logofoot;
+    width: 40%;
+    height: 10rem;
+    justify-self: center;
+    margin-top: 10rem;
+}
+
+.footer-icons {
+    grid-area: iconsfoot;
+    justify-self: center;
+    align-self: center;
+}
+
+.foot-icons a, li {
+    color: #FFFFFF;
+}
+
+.footer-subtitle {
+    grid-area: subtitlefoot;
+    color:#FFFFFF;
+    font-size: 2rem;
+    justify-self: center;
+}
+
+.copyright {
+    grid-area: copyright;
+    color:#FFFFFF;
+    font-size: 1.2rem;
+    justify-self: center;
+}
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1560px) {
+    /* .container {
+        background-color: darkred;
+    } */
+    /* NAVBAR */
+    .navbar-links a, li {
+        font-size: 2rem;
+    }
+    /* MAIN SECTION */
+    .title {
+        font-size: 4.5rem;
+    }
+    .article {
+        font-size: 2.8rem;
+    }
+}
+@media (max-width: 1415px) {
+    /* .container {
+        background-color: blue;
+    } */
+    .navbar-links a, li {
+        padding: 0 1rem 0 2rem;
+    }
+}
+@media (max-width: 1215px) {
+    /* .container {
+        background-color: seagreen;
+    } */
+    /* NAVBAR */
+    .navbar-links a, li {
+        padding: 0 1rem;
+    }
+    /* MAIN SECTION */
+    .main {
+        height: 120vw;
+    }    
+}
+/* IPAD PRO */
+@media (max-width: 1024px)  {
+    /* .container {
+        background-color:yellow;
+    } */
+    /* HAMBURGER MENU */
+    .nav {
+        visibility: hidden;
+    }
+    .mini-nav {
+        visibility: visible;
+    }
+    .mini-logo-container {
+        padding: 3rem 0;
+    }
+    .mini-logo {
+        width: 40%;
+        padding-left: 28%;
+    }
+    .mini-nav-link {
+        height: 7vw;
+        font-size: 2.5rem;
+    }
+    /* MAIN SECTION */
+    .main {
+        height: 180vw;
+    }    
+    .title {
+        font-size: 3.8rem;
+    }
+    .article {
+        font-size: 2.6rem;
+    }
+    /* FOOTER */
+    .footer {
+        height: 30vw;
+    }
+    .footer-logo{
+        width: 50%;
+    }
+}
+/* IPAD */
+@media (max-width: 796px) {
+    /* .container {
+        background-color: hotpink;
+    } */
+    /* HAMBURGER MENU */
+    .nav {
+        visibility: hidden;
+    }
+    .mini-nav {
+        visibility: visible;
+    }
+    .mini-logo-container {
+        padding: 3rem 0;
+    }
+    .mini-logo {
+        width: 40%;
+        padding-left: 28%;
+    }
+    .mini-nav-link {
+        font-size: 2.2rem;
+    }
+    /* MAIN SECTION */
+    .main {
+        height: 215vw;
+    } 
+    .title {
+        font-size: 3rem;
+    }
+    .article {
+        font-size: 2rem;
+        padding: 3rem 2rem;
+    }
+    /* FOOTER */
+    .footer {
+        height: 35vw;
+    }  
+    .footer-logo{
+        height: 8rem;
+        margin-top: 8rem;
+    }
+}
+@media (max-device-width: 568px) {
+    /* .container {
+        background-color: green;
+    } */
+    /* HAMBURGER MENU */
+    .hamburger-menu {
+        margin-left: 84%;
+        height: 25px;
+        width: 30px;
+    }
+    .line {
+        height: .4rem;
+    }
+    .line-2 {
+        height: .28rem;
+    }
+    .mini-nav-link {
+        height: 9vw;
+        font-size: 1.8rem;
+    }
+    /* MAIN SECTION */
+    .main {
+        height: 250vw;
+    } 
+    .title {
+        font-size: 3rem;
+    }
+    .article {
+        font-size: 2rem;
+        padding: 3rem 1rem;
+    }
+    /* FOOTER */
+    .decoration-footer {
+        border-top: 1rem solid #AAACC1;
+        border-style: double;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+    }
+    .footer-logo {
+        margin-top: 5rem;
+        width: 50%;
+        height: 4rem;
+    }
+    .foot-icons a, li {
+        color: #FFFFFF;
+        font-size: 1.5rem;
+    }
+    .footer-subtitle {
+        font-size: 1rem;
+    }
+    .copyright {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 477px) {
+    /* .container {
+        background-color: grey;
+    } */
+    /* HAMBURGER MENU */
+    .mini-nav-link {
+        height: 10vw;
+    }
+    /* MAIN SECTION */
+    .main {
+        height: 280vw;
+    } 
+    .title {
+        font-size: 2.5rem;
+    }
+    .article {
+        font-size: 1.8rem;
+        padding: 2rem 1rem;
+    }
+}
+@media (max-width: 375px) {
+    /* .container {
+        background-color: goldenrod;
+    } */
+    /* MAIN SECTION */
+    .main {
+        height: 280vw;
+    } 
+    .title {
+        font-size: 2rem;
+    }
+    .article {
+        font-size: 1.5rem;
+        padding: 1rem 1rem;
+    }
+    /* FOOTER */
+    .decoration-footer {
+        border-top: .7rem double rgb(170, 172, 193);
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+    }
+    .footer-logo {
+        margin-top: 4rem;
+        width: 45%;
+    }
+}
+/* IPHONE 5 */
+  @media (max-width: 320px) {
+    /* .container {
+        background-color: #FF5E00;
+    } */
+    /* HAMBURGER MENU */
+    .hamburger-menu {
+        height: 20px;
+        width: 24px;
+    }
+    .line {
+        height: .3rem;
+    }
+    .line-2 {
+        height: .2rem;
+    }
+    .mini-nav-link {
+        height: 9vw;
+    }
+    /* MAIN SECTION */
+    .main {
+        height: 360vw;
+    } 
+    .title {
+        font-size: 2rem;
+    }
+    .article {
+        font-size: 1.5rem;
+        padding: .5rem .5rem 2rem .5rem;
+    }
+    /* FOOTER */
+    .footer {
+        height: 50vw;
+    }
+}
+@media (max-width: 265px) {
+    /* .container {
+        background-color: aquamarine;
+    } */
+    /* HAMBURGER MENU */
+    .hamburger-menu {
+        margin-left: 75%;
+    }
+     /* MAIN SECTION */
+     .main {
+        height: 415vw;
+    } 
+    .title {
+        font-size: 1.5rem;
+    }
+    .article {
+        font-size: 1.3rem;
+        padding: .5rem .5rem 2rem .5rem;
+    }
+    /* FOOTER */
+    .footer-logo {
+        margin-right: 10%;
+    }
+    .footer-icons {
+        margin-right: 10%;
+    }
+    .footer-subtitle {
+        margin-right: 10%;
+    }
+    .copyright {
+        margin-right: 10%;
+    }
+}
