@@ -1230,6 +1230,7 @@ button:hover {
     color:#FFFFFF;
     font-size: 1.2rem;
     justify-self: center;
+    text-align: center;
 }
 
 .scroll-up-btn {
