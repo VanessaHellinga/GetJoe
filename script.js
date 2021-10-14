@@ -14,8 +14,8 @@ function scrollFunction() {
     document.getElementById("header").style.height = "5vw";
     document.getElementById ("header").style.paddingBottom = "1rem"
     document.getElementById("invisible-home-link").style.fontSize = "5rem";
-    document.getElementById("change-logo").style.width = "5.8vw";
-    document.getElementById("change-logo").style.alignSelf = "start";
+    document.getElementById("change-logo").style.width = "12vw";
+    // document.getElementById("change-logo").style.alignSelf = "center";
     document.getElementById("change-links").style.fontSize = "60%";
     document.getElementById("change-links").style.paddingTop = "2.5rem";
     document.getElementById("change-icons").style.opacity = "0";
@@ -23,8 +23,8 @@ function scrollFunction() {
     document.getElementById("header").style.height = "12vw";
     document.getElementById ("header").style.paddingBottom = "0"
     document.getElementById("invisible-home-link").style.fontSize = "6rem";
-    document.getElementById("change-logo").style.width = "12vw";
-    document.getElementById("change-logo").style.alignSelf = "center";
+    document.getElementById("change-logo").style.width = "22vw";
+    // document.getElementById("change-logo").style.alignSelf = "center";
     document.getElementById("change-links").style.fontSize = "100%";
     document.getElementById("change-icons").style.opacity = "1";
   } 
@@ -132,7 +132,7 @@ function ajax(method, url, data, success, error) {
 }
 
 
-//BUTTON REVEAL
+//EXPERIENCE BUTTON REVEAL BIO
 
 document.querySelectorAll('.experience-btn').forEach(btn => {
     btn.addEventListener('click', () => {
