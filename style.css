@@ -1010,16 +1010,16 @@ button:hover {
 
 .about-logo {
     grid-area: extra;
-    width: 25%;
-    align-self: end;
+    width: 45%;
+    align-self: center;
     justify-self: center;
-    animation: run linear 6s infinite;
+    animation: run linear 9s infinite;
     animation-direction: normal;
 }
 
 @keyframes run {
     0% { margin-left: -140%;}
-    100%{ margin-left: 130%;}
+    100%{ margin-left: 150%;}
 }
 
 .about-heading {
