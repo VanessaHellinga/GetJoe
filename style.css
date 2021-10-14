@@ -459,7 +459,7 @@ button:hover {
     'top'
     'w1'
     'bot';
-    height: 55vw;
+    height: 65vw;
     padding: 5rem;
 }
 
@@ -513,11 +513,11 @@ button:hover {
     text-decoration: none;
     border: none;
     opacity: 0;
-    background-color: #0A0405;
+    font-weight: 700;
 }
 
 .bio1:hover {
-    opacity: .6;
+    opacity: 1;
 }
 /* ARTISTS 10+ */
 /*.section-artists {
@@ -1033,8 +1033,8 @@ button:hover {
 }
 
 .card-common {
-    width: 85%;
-    height: 70%;
+    width: 90%;
+    height: 68%;
     position: relative;
     background-color: #0A0405;
     padding: 1rem 1rem 2rem 1rem;
