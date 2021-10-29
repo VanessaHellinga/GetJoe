@@ -217,10 +217,10 @@ html {
 }
 
 .slide:nth-child(1) {
-    background: linear-gradient(-100deg, rgba(38, 38, 38, 1), rgba(38, 38, 38, .8), transparent), url() center no-repeat;
+    background: linear-gradient(-100deg, rgba(38, 38, 38, 1), rgba(38, 38, 38, .8), transparent), url(images/Press\ Release.jpg) center no-repeat;
     background-size: cover;
-    background-color: #CC2026;
-}
+    /* background-color: #CC2026; */  
+} 
 
 .slide:nth-child(2) {
     background: linear-gradient(-100deg, rgba(38, 38, 38, 1), rgba(38, 38, 38, .8), transparent), url() center no-repeat;
@@ -254,6 +254,32 @@ html {
     font-weight: 700;
     text-transform: uppercase;
 }
+
+.content1 {
+    position: relative;
+    color: #CC2026;
+    top: 20%;
+    text-align: end;
+    margin-right: 10rem;
+    letter-spacing: .4rem;
+    /* background-color: rgba(38, 38, 38, .8); */
+}
+
+.content1 h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 6rem;  
+}
+
+.content1 a {
+    font-size: 5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #CC2026;
+}
+
+
 
 
 /* ARROW BUTTONS */
