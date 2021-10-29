@@ -46,7 +46,7 @@ html {
 
 .logo {
     grid-area: logo;
-    width: 11.5vw;
+    width: 22vw;
     justify-self: center;
     align-self: center;
 }
