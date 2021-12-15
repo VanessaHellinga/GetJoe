@@ -1389,6 +1389,9 @@ button:hover {
         padding: 0 1rem;
     }
     /* MAIN SECTION */
+    .content1 {
+        margin-right: 2rem;
+    }
     .content {
         margin-right: 1.5rem;
     }
@@ -1496,8 +1499,14 @@ button:hover {
         font-size: 2.5rem;
     }
     /* MAIN SECTION */
+    .content1 h3{
+        font-size: 3rem;
+    }
+    .content1 p {
+        font-size: 2rem;
+    }
     .content h3 {
-        font-size: 3.3rem;
+        font-size: 3rem;
     } 
     .content p {
         font-size: 2rem;
@@ -1682,9 +1691,9 @@ button:hover {
 
 /* IPAD */
 @media (max-width: 796px) {
-    /* .container {
+    .container {
         background-color: hotpink;
-    } */
+    }
     /* HAMBURGER MENU */
     .nav {
         visibility: hidden;
@@ -1703,6 +1712,15 @@ button:hover {
         font-size: 2.2rem;
     }
     /* MAIN */
+    .content1 {
+        margin-right: 1.8rem;
+    }
+    .content1 h3 {
+        font-size: 1.8rem;
+    }
+    .content1 p {
+        font-size: 1.6rem;
+    }
     .content {
         margin-right: 2.5rem;
     }
@@ -1862,9 +1880,9 @@ button:hover {
 }
 
 @media (max-device-width: 568px) {
-    /* .container {
+    .container {
         background-color: green;
-    } */
+    }
     /* HAMBURGER MENU */
     .hamburger-menu {
         margin-left: 84%;
@@ -1884,6 +1902,9 @@ button:hover {
     /* MAIN SECTION */
     .main {
         height: 60vw;
+    }
+    .content1 {
+        margin-right: .5rem;
     }
     .content {
         margin-right: .5rem;
@@ -2088,12 +2109,19 @@ button:hover {
 }
 
 @media (max-width: 477px) {
-    /* .container {
+    .container {
         background-color: grey;
-    } */
+    }
     /* HAMBURGER MENU */
     .mini-nav-link {
         height: 10vw;
+    }
+    /* MAIN */
+    .content1 h3 {
+        font-size: 1.4rem;
+    }
+    .content1 p {
+        font-size: 1.2rem;
     }
     /* NEWS */
     .gallery-link {
@@ -2101,13 +2129,13 @@ button:hover {
     }
     .gallery-link::before{
         top: 3vw;
-        left: 95%;
+        left: 105%;
         height: 85%;
     }
     .gallery-link::after{
-        width: 99%;
+        width: 102%;
         top: 25%;
-        left: 6%;
+        left: 8%;
     }
     .gallery-link:hover::after {
         width: 99%;
@@ -2130,9 +2158,9 @@ button:hover {
 }
 
 @media (max-width: 375px) {
-    /* .container {
+    .container {
         background-color: goldenrod;
-    } */
+    }
     /* NEWS */
       .news-title {
         font-size: 2.5rem;
@@ -2194,9 +2222,9 @@ button:hover {
 }
 /* IPHONE 5 */
   @media (max-width: 320px) {
-    /* .container {
+    .container {
         background-color: #FF5E00;
-    } */
+    }
     /* HAMBURGER MENU */
     .hamburger-menu {
         height: 20px;
@@ -2304,9 +2332,9 @@ button:hover {
     }
 }
 @media (max-width: 265px) {
-    /* .container {
+    .container {
         background-color: aquamarine;
-    } */
+    }
     /* HAMBURGER MENU */
     .hamburger-menu {
         margin-left: 75%;
