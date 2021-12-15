@@ -1,0 +1,12 @@
+font-family: 'Red Hat Display', sans-serif; 
+font-weight: 400; //regular
+font-weight: 500; //medium
+font-weight: 700; //bold
+font-weight: 900; //black
+
+
+Black = #0A0405
+White = #FFFFFF
+Grey = #AAACC1
+Red = #CC2026
+Yellow = #F7941C
