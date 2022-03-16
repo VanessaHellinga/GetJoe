@@ -1269,6 +1269,22 @@ button:hover {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MEDIA QUERIES */
 @media (max-width: 1560px) {
     /* .container {
@@ -1665,9 +1681,9 @@ button:hover {
 
 /* IPAD */
 @media (max-width: 796px) {
-    .container {
+    /* .container {
         background-color: hotpink;
-    }
+    } */
     /* HAMBURGER MENU */
     .nav {
         visibility: hidden;
@@ -1854,9 +1870,9 @@ button:hover {
 }
 
 @media (max-device-width: 568px) {
-    .container {
+    /* .container {
         background-color: green;
-    }
+    } */
     /* HAMBURGER MENU */
     .hamburger-menu {
         margin-left: 84%;
@@ -2083,9 +2099,9 @@ button:hover {
 }
 
 @media (max-width: 477px) {
-    .container {
+    /* .container {
         background-color: grey;
-    }
+    } */
     /* HAMBURGER MENU */
     .mini-nav-link {
         height: 10vw;
@@ -2132,9 +2148,9 @@ button:hover {
 }
 
 @media (max-width: 375px) {
-    .container {
+    /* .container {
         background-color: goldenrod;
-    }
+    } */
     /* NEWS */
       .news-title {
         font-size: 2.5rem;
@@ -2196,9 +2212,9 @@ button:hover {
 }
 /* IPHONE 5 */
   @media (max-width: 320px) {
-    .container {
+    /* .container {
         background-color: #FF5E00;
-    }
+    } */
     /* HAMBURGER MENU */
     .hamburger-menu {
         height: 20px;
@@ -2306,9 +2322,9 @@ button:hover {
     }
 }
 @media (max-width: 265px) {
-    .container {
+    /* .container {
         background-color: aquamarine;
-    }
+    } */
     /* HAMBURGER MENU */
     .hamburger-menu {
         margin-left: 75%;
