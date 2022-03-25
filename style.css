@@ -440,11 +440,11 @@ button:hover {
 }
 .more span:before {
   right: 100%;
-  margin-right: 15px;
+  /* margin-right: 15px; */
 }
 .more span:after {
   left: 100%;
-  margin-left: 15px;
+  /* margin-left: 15px; */
 } 
 
 
