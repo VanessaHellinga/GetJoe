@@ -198,7 +198,7 @@ html {
     grid-template-areas: 
     'empT empT empT'
     'left center right'
-    'empB empB empB';
+    'empL empB empR';
     height: 45vw;
     transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
 }
@@ -436,8 +436,9 @@ button:hover {
   border-top: 1px solid #F7941C;
   border-bottom: 1px solid #F7941C;
   top: 35%;
-  width: 60rem;
+  width: 100vw;
 }
+
 .more span:before {
   right: 100%;
   /* margin-right: 15px; */
@@ -1200,8 +1201,7 @@ button:hover {
 
 .footer-logo{
     grid-area: logofoot;
-    width: 40%;
-    height: 10rem;
+    height: 6rem;
     justify-self: center;
     margin-top: 10rem;
 }
@@ -1285,12 +1285,13 @@ button:hover {
 
 
 /* MEDIA QUERIES */
-@media (max-width: 1560px) {
+@media (max-width: 1590px) {
     /* .container {
         background-color: darkred;
     } */
     .navbar-links a, li {
         font-size: 2rem;
+        padding: 0 1rem 0 2.5rem;
     }
     /* SLIDESHOW */
     .content {
@@ -1302,14 +1303,12 @@ button:hover {
         font-size: 2.5rem;
     }
      /* ABOUT */
-     .card-common {
-        width: 80%;
-        height: 65%;
-        margin-left: 8%;
+    .card-common {
+        margin-left: 2%;
     }
-     .experience {
-        width: 91%;
-        height: 93%;  
+    .experience {
+        width: 90.5%;
+        height: 90%;  
     }
     .experience-heading {
         top: 18%;
@@ -1333,7 +1332,7 @@ button:hover {
     }
     /* NEWS */
     .music-img {
-        border: solid 1.5rem #CC2026;
+        border: solid 1.4rem #CC2026;
         border-style: double;
     }
     .music-name {
@@ -1344,9 +1343,8 @@ button:hover {
         height: 60vw;
     }
     .artists-common {
-        border: solid 1.5rem #AAACC1;
+        border: solid 1.4rem #AAACC1;
         border-style: double; 
-        width: 25%; 
     }
     .readmoretext {
         font-size: 2.5rem;
@@ -1357,12 +1355,10 @@ button:hover {
         height: 2.5rem;
     }
     .experience {
-        width: 90%;
-        height: 92%;  
+        width: 90%; 
     }
     .experience-heading {
         font-size: 3rem;
-        
     }
     .resume {
         font-size: 1.8rem;
@@ -1370,7 +1366,7 @@ button:hover {
     }
 }
 
-@media (max-width: 1215px) {
+@media (max-width: 1230px) {
     /* .container {
         background-color: seagreen;
     } */
@@ -1408,7 +1404,8 @@ button:hover {
     }
     .artists-common {
         border: solid 1.2rem #AAACC1;
-        border-style: double;  
+        border-style: double; 
+        width: 30%; 
     }
      /* FORM GRID WITHIN CONTACT CARD */
     .email-form {
@@ -1437,7 +1434,7 @@ button:hover {
     /* ABOUT */
     @keyframes run {
         0% { margin-left: -140%;}
-        100%{ margin-left: 120%;}
+        100%{ margin-left: 140%;}
     }
     .name {
         font-size: 2.5rem;
@@ -1488,6 +1485,9 @@ button:hover {
         font-size: 2.5rem;
     }
     /* MAIN SECTION */
+    .slideshow-wrapper {
+        height: 115%;
+    }
     .content1 h3{
         font-size: 3rem;
     }
@@ -1527,21 +1527,22 @@ button:hover {
     }
     .gallery-link {
         width: 75%;
-        transform: translateX(29%);
+        transform: translateX(33%);
+        margin: 4rem 0;
     }
     .gallery-link::before{
-        left: 65%;
-        height: 87%;
+        visibility: hidden;
     }
     .gallery-link::after{
-        width: 67%;
-    }
-    .gallery-link:hover::after {
-        width: 67%;
+        visibility: hidden;
     }
     .music-img {
         width: 45vw;
         height: 30vw;
+        border-width: 1.3rem;
+    }
+    .gallery-link:hover .music-img {
+        box-shadow: none;
     }
     .music-name {
         font-size: 2rem;
@@ -1570,9 +1571,6 @@ button:hover {
     } */
     .section-artists {
         height: 65vw;
-    }
-    .artists-common {
-        width: 30%;
     }
     .readmoretext {
         font-size: 1.8rem;
@@ -1611,7 +1609,8 @@ button:hover {
         font-size: 1.8rem;
     }
     .cd1 {
-        height: 50%;
+        height: 60%;
+        width: 60%;
         margin-left: 5%;
     }
     .disc-1 {
@@ -1621,7 +1620,8 @@ button:hover {
         height: 50%;
     }
     .cd2 {
-        height: 50%;
+        height: 60%;
+        width: 60%;
         margin-right: 5%;
     }
     .disc-2 {
@@ -1639,7 +1639,7 @@ button:hover {
         'heading heading'
         'c1 c2'
         'c3 c4';
-        /* height: 250vw; */
+        height: 165vw;
     }
     .about-logo {
         width: 45%;
@@ -1651,16 +1651,13 @@ button:hover {
         0% { margin-left: -160%;}
         100%{ margin-left: 152%;}
     }
-    .card-common {
-        /* width: 77%; */
-        height: 75%;
-    } 
     .experience-btn {
         width: 2rem;
         height: 2rem;
     }
-    .experience {
-        /* width: 88%; */
+    .experience {    
+        width: 90%;
+        height: 118%
     }
     .experience-heading {
         top: 15%;
@@ -1672,23 +1669,14 @@ button:hover {
     .footer {
         height: 30vw;
     }
-    .footer-logo{
-        width: 50%;
-    }
 }
 
 /* IPAD */
-@media (max-width: 796px) {
+@media (max-width: 815px) {
     /* .container {
         background-color: hotpink;
     } */
     /* HAMBURGER MENU */
-    .nav {
-        visibility: hidden;
-    }
-    .mini-nav {
-        visibility: visible;
-    }
     .mini-logo-container {
         padding: 3rem 0;
     }
@@ -1700,15 +1688,6 @@ button:hover {
         font-size: 2.2rem;
     }
     /* MAIN */
-    .content1 {
-        margin-right: 1.8rem;
-    }
-    .content1 h3 {
-        font-size: 1.8rem;
-    }
-    .content1 p {
-        font-size: 1.6rem;
-    }
     .content {
         margin-right: 2.5rem;
     }
@@ -1730,25 +1709,6 @@ button:hover {
         grid-template-rows: .1fr 1fr .1fr;
         height: 160vw;
     }
-    .gallery-link {
-        width: 75%;
-    }
-    .music-img {
-        width: 45vw;
-        height: 30vw;
-    }
-    .gallery-link::before{
-        top: 3vw;
-        height: 82%;
-        left: 70%
-    }
-    .gallery-link::after{
-        width: 70%;
-        top: 25%;
-    }
-    .gallery-link:hover::after {
-        width: 70%;
-    }
     .music-name {
         top: 3rem;
         width: 100%;
@@ -1765,7 +1725,7 @@ button:hover {
     }
     /* ARTSTS */
     .section-artists {
-        height: 85vw;
+        height: 95vw;
     }
     .artists-logo {
         margin-top: 15rem;
@@ -1793,26 +1753,6 @@ button:hover {
         font-size: 1.5rem;
     }
     /* DISCOGRAPHY */
-    .cd1 {
-        margin-left: 3rem;
-        width: 60%;
-        height: 60%;
-    }
-    .disc-1 {
-        background-color: transparent;
-        opacity: 1;
-        margin-left: 3rem;
-    }
-    .cd2 {
-        margin-right: 3rem;
-        width: 60%;
-        height: 60%;
-    }
-    .disc-2 {
-        background-color: transparent;
-        opacity: 1;
-        margin-right: 3rem;
-    }
     .disc-more {
         width: 23%;
         height: 4.5vw;
@@ -1838,7 +1778,7 @@ button:hover {
         100%{ margin-left: 145%;}
     }
     .card-common {
-        width: 60%;
+        width: 55%;
         margin-left: 0;
         justify-self: center;
     }
@@ -1847,10 +1787,6 @@ button:hover {
     }
     .job-title {
         font-size: 1.5rem;
-    }
-    .experience {
-        width: 91%;
-        height: 101%;
     }
     .experience-heading {
         font-size: 2.5rem;
@@ -1862,21 +1798,51 @@ button:hover {
         height: 35vw;
     }  
     .footer-logo{
-        height: 8rem;
         margin-top: 8rem;
     }
 }
 
-@media (max-device-width: 799px) {
+@media (max-device-width: 640px) {
+    /* NEWS */
+    .gallery-link {
+        width: 66%;
+    }
+    .music-img {
+        border-width: 1.1rem;
+    }
+    /* ARTISTS */
+    .artists-common {
+        border-width: 1.1rem;
+    }
+    /* CONTACT */
+    .section-mailinglist {
+        height: 90vw;
+    }
+    /* DISCOGRAPHY */
+    .section-discography {
+        height: 105vw;
+    }
+    .disc-more {
+        border-width: .5rem;
+    }
     /* ABOUT */
     .about-logo {
         width: 55%;
     }
-    .experience {
-        width: 89%;
-        height: 101%;
+    /* FOOTER */
+    .footer {
+        height: 40vw;
     }
-    
+    .decoration-footer {
+        border-top: 1.1rem double #AAACC1;
+    }
+    .footer-logo {
+        height: 5rem;
+    }
+    /* SCROLL UP BUTTON */
+     .scroll-up-btn {
+        visibility: hidden;
+    }
 }
 
 @media (max-device-width: 568px) {
@@ -1885,7 +1851,6 @@ button:hover {
     } */
     /* HAMBURGER MENU */
     .hamburger-menu {
-        margin-left: 84%;
         height: 25px;
         width: 30px;
     }
@@ -1903,17 +1868,14 @@ button:hover {
     .main {
         height: 60vw;
     }
-    .content1 {
-        margin-right: .5rem;
+    .slideshow-wrapper {
+        height: 100%;
     }
     .content {
         margin-right: .5rem;
     }
     .content h3 {
-        font-size: 1.5rem;
-    }
-    .content p {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
     .left {
         font-size: 1.5rem;
@@ -1937,20 +1899,8 @@ button:hover {
         height: 150vw;
     }
     .gallery-link {
-        transform: translateX(15%);
-    }
-    .gallery-link::before{
-        top: 5vw;
-        left: 90%;
-        height: 80%;
-    }
-    .gallery-link::after{
-        width: 93%;
-        top: 25%;
-        left: 6%;
-    }
-    .gallery-link:hover::after {
-        width: 93%;
+        transform: translateX(25%);
+        width: 50%;
     }
     .music-img {
         width: 60vw;
@@ -1991,9 +1941,6 @@ button:hover {
         line-height: 5rem;
     }
     /* CONTACT */
-    .section-mailinglist {
-        height: 120vw;
-    }
     .mail-title {
         font-size: 2.5rem;
     }
@@ -2015,7 +1962,7 @@ button:hover {
         border-style: double;
     }
     .cd1 {
-        width: 75%;
+        width: 70%;
         margin-left: 0;
     }
     .disc-1 {
@@ -2024,7 +1971,7 @@ button:hover {
         background-color: transparent;
     }
     .cd2 {
-        width: 75%;
+        width: 70%;
         margin-right: 0;
     }
     .disc-2 {
@@ -2043,21 +1990,16 @@ button:hover {
         font-size: 1.3rem;
         height: 3rem;
         width: 10rem;
-        border: .5rem solid #CC2026
     }
     /* ABOUT */
     .section-about {
         height: 375vw;
-        /* margin-top: 5rem; */
-    }
-    .about-logo {
-        /* width: 60%; */
     }
     .about-heading {
         font-size: 2.5rem;
     }
     .card-common {
-        /* height: 75%; */
+        height: 75%;
         margin: 3rem 0;
     }
     .name {
@@ -2081,16 +2023,8 @@ button:hover {
         font-size: 1.4rem;
     }
     /* FOOTER */
-    .decoration-footer {
-        border-top: 1rem solid #AAACC1;
-        border-style: double;
-        border-bottom: none;
-        border-left: none;
-        border-right: none;
-    }
     .footer-logo {
         margin-top: 5rem;
-        width: 55%;
         height: 4rem;
     }
     .foot-icons a, li {
@@ -2103,11 +2037,7 @@ button:hover {
     .copyright {
         font-size: .8rem;
     }
-    /* SCROLL UP BUTTON */
-    .scroll-up-btn {
-        visibility: hidden;
-        opacity: 0;
-    }
+   
 }
 
 @media (max-width: 477px) {
@@ -2115,6 +2045,13 @@ button:hover {
         background-color: grey;
     } */
     /* HAMBURGER MENU */
+    .mini-logo {
+        width: 65%;
+        padding-left: 19%;
+    }
+    .hamburger-menu {
+        margin-left: 88%;
+    }
     .mini-nav-link {
         height: 10vw;
     }
@@ -2127,28 +2064,22 @@ button:hover {
     }
     /* NEWS */
     .gallery-link {
-        transform: translateX(10%);
+        transform: translateX(19%);
     }
-    .gallery-link::before{
-        top: 3vw;
-        left: 105%;
-        height: 85%;
-    }
-    .gallery-link::after{
-        width: 102%;
-        top: 25%;
-        left: 8%;
-    }
-    .gallery-link:hover::after {
-        width: 99%;
+    .music-description {
+        width: 100%;
     }
     /* ARTISTS */
     .artists-common {
         width: 50%;
     }
+    /* CONTACT */
+    .section-mailinglist {
+        height: 100vw;
+    }
     /* ABOUT */
-    .section-about {
-        height: 450vw;
+    .about-logo {
+        width: 65%;
     }
     .card-common {
         width: 65%;
@@ -2164,41 +2095,86 @@ button:hover {
         font-size: 1.2rem;
         text-indent: .5rem;
     }
+    /* FOOTER */
+    .footer-logo {
+        height: 3rem;
+    }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 380px) {
     /* .container {
         background-color: goldenrod;
     } */
+    .hamburger-menu {
+        margin-left: 86%;
+    }
+    /* MAIN */
+    .main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'empT empT'
+        'center center'
+        'botL botR';
+    }
+    .slideshow-wrapper {
+        width: 92%;
+        margin-left: 2.5%;
+        height: 120%;
+    }
+    .content h3 {
+        font-size: 1.6rem;
+    }
+    .content p {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .left {
+        grid-area:botL;
+        padding: 1rem;
+        transform: translateX(22%) translateY(100%);
+        
+    }
+    .right {
+        width: 50%;
+        grid-area: botR;
+        padding: 1rem;
+        transform: translateX(-15%) translateY(100%);
+    }
     /* NEWS */
-      .news-title {
+    .news-title {
         font-size: 2.5rem;
     }
     .section-news {
-        height: 240vw;
+        height: 260vw;
     }
     .music-img {
         border: .8rem solid #CC2026;
         border-style: double;
     }
+    .music-img {
+        width: 70vw;
+        height: 50vw;
+    }
     .gallery-link {
-        transform: translateX(2%);
-    }
-    .gallery-link::before{
-        left: 102%;
-    }
-    .gallery-link::after{
-        width: 105%;
-    }
-    .gallery-link:hover::after {
-        width: 105%;
+        transform: translateX(0%);
     }
     /* ARTISTS */
     .section-artists {
         height: 110vw;
     }
+    .artists-logo {
+        width: 100%;
+    }
+    @keyframes run {
+        0% { margin-left: -150%;}
+        100%{ margin-left: 165%;}
+    }
     .artists-common {
         width: 55%;
+    }
+    /* CONTACT */
+    .section-mailinglist {
+        height: 130vw;
     }
     /* DISCOGRAPHY */
     .cd-common {
@@ -2213,6 +2189,9 @@ button:hover {
     }
     .about-heading {
         margin: 5rem 0;
+    }
+    .card-common {
+        height: 90%;
     }
     .experience {
         width: 83%;
@@ -2230,18 +2209,14 @@ button:hover {
         margin-top: 10rem;
     }
     .decoration-footer {
-        border-top: .7rem double rgb(170, 172, 193);
-        border-bottom: none;
-        border-left: none;
-        border-right: none;
+        border-top: .7rem double #AAACC1;
     }
     .footer-logo {
         margin-top: 4rem;
-        /* width: 50%; */
     }
 }
 /* IPHONE 5 */
-  @media (max-width: 320px) {
+  @media (max-width: 330px) {
     /* .container {
         background-color: #FF5E00;
     } */
@@ -2249,6 +2224,7 @@ button:hover {
     .hamburger-menu {
         height: 20px;
         width: 24px;
+        margin-left: 85%;
     }
     .line {
         height: .3rem;
@@ -2258,6 +2234,9 @@ button:hover {
     }
     .mini-nav-link {
         height: 9vw;
+    }
+    .mini-logo {
+        padding-left: 17%;
     }
     /* SLIDESHOW */
     .main {
@@ -2269,21 +2248,7 @@ button:hover {
     }
     /* NEWS */
     .section-news {
-        height: 250vw;
-    }
-    .gallery-link {
-        transform: translateX(-1%);
-    }
-    .gallery-link::before{
-        left: 105%;
-        top: 7%;
-    }
-    .gallery-link::after{
-        width: 109%;
-        top: 22%
-    }
-    .gallery-link:hover::after {
-        width: 109%;
+        height: 280vw;
     }
     .music-name {
         top: 1.9rem;
@@ -2291,10 +2256,29 @@ button:hover {
     .music-description {
         left: 1.5rem;
         bottom: 1vw;
-        padding-bottom: .6rem;
+        padding-bottom: 1rem;
+        width: 110%;
     }
-    .more {
-        transform: translateX(-2%);
+    .section-discography {
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr 1fr 1fr .5fr;
+        grid-template-areas: 
+        'head'
+        'cd1'
+        'cd2'
+        'button';
+        height: 250vw;
+    }
+    .cd-common {
+        width: 55%;
+        height: 60%;
+        margin-top: 3rem;
+    }
+    .cd1 {
+        padding: 2rem 0;
+    }
+    .cd2 {
+        padding: 2rem 0;
     }
     /* ARTISTS */
     .section-artists {
@@ -2308,18 +2292,22 @@ button:hover {
       height: 150vw;
       transform: translateX(-2%);
     }
+    .form-container {
+        width: 91%;
+    }
     /* DISCOGRAPHY */
     .section-discography {
         transform: translateX(-2%);
     }
     .cd-common {
-        width: 55%;
-        height: 50%;
+        width: 75%;
+        height: 70%;
     }
     .disc-more {
         margin-top: 1rem;
         height: 2.5rem;
         width: 8rem;
+        border-width: .2rem;
     }
     /* ABOUT */
     .section-about {
@@ -2330,9 +2318,8 @@ button:hover {
         margin-top: 5rem;
     }
     .card-common {
-        height: 75%;
         width: 70%;
-        margin-right: 2rem;
+        margin-right: 1rem;
     }
     .name {
         font-size: 1.3rem;
@@ -2342,11 +2329,11 @@ button:hover {
         width: 1.2rem;
     }
     .experience {
-        width: 79%;
-        height: 75%;
+        height: 82%;
+        width: 85%;
     }
     .resume {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     /* FOOTER */
     .footer {
@@ -2356,96 +2343,29 @@ button:hover {
         height: 3rem;
     }
 }
-@media (max-width: 265px) {
+@media (max-width: 299px) {
     /* .container {
         background-color: aquamarine;
     } */
-    /* HAMBURGER MENU */
     .hamburger-menu {
-        margin-left: 75%;
-    }
-    .mini-logo {
-        width: 70%;
-        padding-left: 10%;
+        margin-left: 84%;
     }
     /* SLIDESHOW */
     .main {
-        width: 90%;
-    }
-    .content h3 {
-        font-size: 1rem;
-    }
-    .content p {
-        font-size: .8rem;
+        width: 95%;
     }
     /* NEWS */
-    .section-news {
-        /* height: 300vw; */
-    }
-    .music-img {
-        width: 55vw;
-    }
-    .music-description {
-        font-size: .5rem;
-        bottom: 3vw;
-    }
     .gallery {
-        height: 200vw;
-        transform: translateX(-3%);
-    }
-    .music-name {
-        visibility: hidden;
+        margin-right: 7%;
     }
     /* ARTISTS */
     .section-artists {
-        height: 135vw;
-    }
-    .artists-common {
-        width: 62%;
-    }
-    .readmoretext {
-        font-size: .7rem;
+        height: 130vw;
     }
     /* CONTACT */
     .section-mailinglist {
-        height: 200vw;
+        transform: translateX(-4%);
     }
-    /* DISCOGRAPHY */
-    .cd-common {
-        margin-right: 10%;
-    }
-    .readmore-common {
-        margin-right: 14%;
-        font-size: 1rem;
-    }
-    /* ABOUT */
-    .section-about {
-        height: 600vw;
-        width: 92%;
-    }
-    .card-common {
-        height: 80%;
-        width: 75%;
-        margin-right: 0;
-    } 
-    .experience {
-        height: 65%;
-    }
-    .job-title {
-        font-size: 1rem;
-    }
-    /* FOOTER */
-    .footer-logo {
-        margin-right: 10%;
-    }
-    .footer-icons {
-        margin-right: 10%;
-    }
-    .footer-subtitle {
-        margin-right: 10%;
-    }
-    .copyright {
-        margin-right: 10%;
-        font-size: .5rem;
-    }
+    
 }
+    
