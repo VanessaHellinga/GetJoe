@@ -1,5 +1,4 @@
 //HAMBURGER MENU
-
 document.querySelector('.hamburger-menu').addEventListener('click', () => {
   document.querySelector('.mini-nav').classList.toggle('change');
 })
@@ -11,24 +10,45 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-    document.getElementById("header").style.height = "5vw";
-    document.getElementById ("header").style.paddingBottom = "1rem"
-    document.getElementById("invisible-home-link").style.fontSize = "5rem";
-    document.getElementById("change-logo").style.width = "12vw";
-    // document.getElementById("change-logo").style.alignSelf = "center";
-    document.getElementById("change-links").style.fontSize = "60%";
-    document.getElementById("change-links").style.paddingTop = "2.5rem";
-    document.getElementById("change-icons").style.opacity = "0";
+    // left side
+    document.getElementById("header").style.height = "6vw";
+    document.getElementById ("header").style.paddingBottom = "1rem";
+    document.getElementById("invisible-home-link").style.fontSize = "99%";
+    document.getElementById("change-logo").style.width = "80%";
+   
+    document.getElementById("change-heading").style.display = "none";
+    document.getElementById("navbar-icons").style.paddingTop = ".3rem";
+   
+    // right side
+    // document.getElementById("change-links-news").style.fontSize = "60%";
+    // document.getElementById("change-links-artists").style.fontSize = "60%";
+    // document.getElementById("change-links-music").style.fontSize = "60%";
+    // document.getElementById("change-links-about").style.fontSize = "60%";
+    // document.getElementById("change-links-team").style.fontSize = "60%";
+    // document.getElementById("change-links-contact").style.fontSize = "60%";
+    
+
+
+    
   } else {
+    // Left side
     document.getElementById("header").style.height = "12vw";
-    document.getElementById ("header").style.paddingBottom = "0"
-    document.getElementById("invisible-home-link").style.fontSize = "6rem";
-    document.getElementById("change-logo").style.width = "22vw";
-    // document.getElementById("change-logo").style.alignSelf = "center";
-    document.getElementById("change-links").style.fontSize = "100%";
-    document.getElementById("change-icons").style.opacity = "1";
+    document.getElementById ("header").style.paddingBottom = "0";
+    document.getElementById("invisible-home-link").style.fontSize = "4rem";
+    document.getElementById("change-logo").style.width = "100%";
+ 
+    document.getElementById("change-heading").style.display = "block";
+    document.getElementById("navbar-icons").style.paddingTop = "0";
+   
+    // right side
+    // document.getElementById("change-links-news").style.fontSize = "initial";
+    // document.getElementById("change-links-artists").style.fontSize = "initial";
+    // document.getElementById("change-links-music").style.fontSize = "initial";
+    // document.getElementById("change-links-about").style.fontSize = "initial";
+    // document.getElementById("change-links-team").style.fontSize = "initial";
+    // document.getElementById("change-links-contact").style.fontSize = "initial";
   } 
-  }
+  };
 
 
 //SCROLL TO TOP BUTTON APPEARS AT ARTIST SECTION
@@ -131,15 +151,6 @@ function ajax(method, url, data, success, error) {
   xhr.send(data);
 }
 
-
-//EXPERIENCE BUTTON REVEAL BIO
-
-document.querySelectorAll('.experience-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-        btn.classList.toggle('change')
-        btn.nextElementSibling.classList.toggle('change')
-    })
-});
 
 
 
