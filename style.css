@@ -58,9 +58,16 @@ html {
     justify-self: center;
     align-self: start;
     font-size: 1.5rem;
+    font-weight: 400;
     align-self: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    padding: 1rem;
+    margin-top: .5rem;
+}
+
+.heading span {
+    font-size: 80%;
 }
 
 .navbar {
@@ -117,7 +124,23 @@ html {
 }
 
 .mini-logo {
-    width: 60%;
+    width: 100%;
+    margin: .5rem 0;
+}
+
+.slug {
+    color: #FFFFFF;
+   text-align: center;
+   text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.slug2 {
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1rem;
 }
 
 .hamburger-menu {
@@ -131,6 +154,7 @@ html {
     justify-content: space-between;
     cursor: pointer;
     z-index: 100;
+    padding: 0 1.5rem;
 }
 
 .line {
@@ -1554,7 +1578,7 @@ button:hover {
 @media screen and (max-width: 411px) {
     /* HAMBURGER MENU */
     .mini-logo {
-        width: 70%;
+        /* width: 70%; */
     }
     .hamburger-menu {
         width: 30px;
@@ -1774,7 +1798,7 @@ button:hover {
     }
     /* HAMBURGER MENU */
     .mini-logo {
-        width: 80%;
+        /* width: 80%; */
     }
     .hamburger-menu {
         width: 25px;
