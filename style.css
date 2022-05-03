@@ -49,8 +49,9 @@ html {
     grid-area: logo;
     width: 100%;
     justify-self: center;
-    align-self: end;
-    padding-top: 1rem;
+    /* align-self: end; */
+    align-self: center;
+    /* padding-top: 1rem; */
 }
 
 .heading {
@@ -62,53 +63,103 @@ html {
     align-self: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding: 1rem;
-    margin-top: .5rem;
+    /* padding: 1rem; */
+    /* margin-top: .5rem; */
 }
 
 .heading span {
     font-size: 80%;
 }
 
+/* NAVBAR */
 .navbar {
-    grid-area: navbar;
-    justify-self: end; 
-    align-self: center;
-}
-
-.navbar-links a, li {
-    display:inline-flex;
-    padding: 0 1rem;
-    text-decoration: none;
-    list-style-type: none;
-    color: #FFFFFF;
-    font-size: 1.5rem;
-    justify-self: space-between;
-    transition: transform .8s;
-}
-
-
-.navbar-links a:hover {
-    /* border-bottom: .3rem solid #CC2026; */
-    transform: translateY(-.5rem);
-    color: #ee2a31;
-}
-
-.navbar-icons {
-    grid-area: navbar-icons;
+    display: flex;
+    flex-direction: column;
     justify-self: end;
-    align-self: center;
-    margin-right: 2rem;
 }
-
-.icons a {
-    color: white;
+#navbar-icons {
+    display: flex;
+    justify-content: end;
+    padding-right: 2rem;
+}
+.icons:hover a{
+    color: #CC2026;
+}
+.menu {
+    list-style-type: none;
+    padding: 1rem 2rem 0 0;
+}
+ul li:not(:last-child) {
+    margin-right: 1rem;
+}
+ul li {
+    border: .2rem solid transparent;
+    border-radius: 5%;
+    padding: .5rem;
+    transition: background 0.2s;
+}
+ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.2s;
     font-size: 2rem;
 }
-
-.icons a:hover {
-    color: #ee2a31;
+ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0;
+    background: linear-gradient(100deg, #F7941C, #ffa91b);
+    border-radius: .5rem;
+    transition: opacity 0.2s, visibility 0.2s;
+    z-index: 99;
 }
+ul li ul li {
+    width: 100%;
+    line-height: .5rem;
+    padding: 2rem 0;
+}
+
+ul li:hover {
+    /* background: #ec4138; 
+    border: 2px solid #f05749;
+    border-right: 2px solid #e02a21;
+    border-bottom: 2px solid #e02a21;  */
+}
+.navbar-links:hover a {
+    color:#CC2026;
+    transform: translateY(-.5rem);
+}
+ul li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    /* box-shadow: 0px 1px 3px .5px #ebecf1; */
+}
+.navbar-links:hover ul li a {
+    color: #FFFFFF;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+@keyframes slide-in {
+    0% {
+        top: -50rem;
+   }
+    40% {
+        top: 20rem;
+   }
+    70% {
+        top: 10rem;
+   }
+    100% {
+        top: 15rem;
+   }
+}
+
+
+
 
 /* HAMBURGER MENU */
 .mini-nav {
@@ -234,6 +285,10 @@ html {
     color: #fff;
     text-decoration: none;
     font-size: 2.5rem;
+}
+
+.hamburger-icons:hover a {
+    color: #CC2026;
 }
 
 

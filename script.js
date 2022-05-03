@@ -12,12 +12,13 @@ function scrollFunction() {
   if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
     // left side
     document.getElementById("header").style.height = "6vw";
-    document.getElementById ("header").style.paddingBottom = "1rem";
+    document.getElementById ("header").style.paddingBottom = "2rem";
     document.getElementById("invisible-home-link").style.fontSize = "99%";
     document.getElementById("change-logo").style.width = "80%";
+    document.getElementById("change-logo").style.marginBottom = "2rem";
    
     document.getElementById("change-heading").style.display = "none";
-    document.getElementById("navbar-icons").style.paddingTop = ".3rem";
+    // document.getElementById("navbar-icons").style.paddingBottom = "1rem";
    
     // right side
     // document.getElementById("change-links-news").style.fontSize = "60%";
@@ -36,9 +37,10 @@ function scrollFunction() {
     document.getElementById ("header").style.paddingBottom = "0";
     document.getElementById("invisible-home-link").style.fontSize = "4rem";
     document.getElementById("change-logo").style.width = "100%";
+    document.getElementById("change-logo").style.paddingBottom = "0";
  
     document.getElementById("change-heading").style.display = "block";
-    document.getElementById("navbar-icons").style.paddingTop = "0";
+    // document.getElementById("navbar-icons").style.marginBottom = "0";
    
     // right side
     // document.getElementById("change-links-news").style.fontSize = "initial";

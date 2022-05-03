@@ -1,0 +1,1005 @@
+@media (max-width: 1230px) {
+    /* .container {
+        background-color: seagreen;
+    } */
+    .navbar-links a, li {
+        /* padding: 0 1rem; */
+    }
+    /* MAIN SECTION */
+    .content1 {
+        margin-right: 2rem;
+    }
+    .content {
+        margin-right: 1.5rem;
+    }
+    .content h3 {
+        font-size: 4rem;
+    } 
+    .content p {
+        font-size: 3rem;
+    }
+    /* NEWS */
+   .music-name {
+       font-size: 1.7rem;
+   }
+   .music-description {
+        bottom: 2vw;
+        font-size: 1.3rem;
+    } 
+    .more {
+        padding-top: 5rem;
+        font-size: 2.8rem;  
+    }  
+    /* ARTISTS */
+    .artists-logo {
+        margin-top: 10rem;
+    }
+    .artists-common {
+        border: solid 1.2rem #AAACC1;
+        border-style: double; 
+        width: 30%; 
+    }
+     /* FORM GRID WITHIN CONTACT CARD */
+    .email-form {
+        font-size: 1.8rem;
+    }  
+    .email-sign {
+        font-size: 1.8rem;
+    }
+    /* DISCOGRAPHY */
+    .disc-temporary{
+        font-size: 2rem; 
+        font-weight: 400;
+    }
+    .readmore-common {
+        padding-top: 5rem;
+        font-weight: 500;
+        font-size: 2rem;
+    }
+    .disc-more{
+        font-size: 2rem;
+        letter-spacing: .1rem;
+        padding: 1rem 2rem 0 2rem;
+        
+        border: .8rem solid #CC2026;
+    }
+    /* ABOUT */
+    @keyframes run {
+        0% { margin-left: -140%;}
+        100%{ margin-left: 140%;}
+    }
+    .name {
+        font-size: 2.5rem;
+    }
+    .job-title {
+        font-size: 1.5rem;
+    }
+    .experience-btn {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    .experience {
+        width: 89%;
+    }
+    .resume {
+        font-size: 1.6rem;
+        text-indent: 1rem;
+    }
+    /* SCROLL UP BTN */
+    .scroll-up-btn {
+        width: 4rem;
+        height: 4rem;
+        font-size: 2rem;
+    }
+}
+
+
+
+/* IPAD PRO */
+@media (max-width: 1024px)  {
+    /* .container {
+        background-color:yellow;
+    } */
+    /* HAMBURGER MENU */
+    .nav {
+        visibility: hidden;
+    }
+    .mini-nav {
+        visibility: visible;
+    }
+    .mini-logo-container {
+        padding: 3rem 0;
+    }
+    .mini-logo {
+        width: 60%;
+        padding-left: 20%;
+    }
+    .mini-nav-link {
+        height: 7vw;
+        font-size: 2.5rem;
+    }
+    /* MAIN SECTION */
+    .slideshow-wrapper {
+        height: 115%;
+    }
+    .content1 h3{
+        font-size: 3rem;
+    }
+    .content1 p {
+        font-size: 2rem;
+    }
+    .content h3 {
+        font-size: 3rem;
+    } 
+    .content p {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    /* NEWS */
+    .section-news {
+        grid-template-rows: .1fr 1fr .1fr;
+        height: 150vw;
+    }
+    .gallery {
+        grid-area: photo;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        'r1'
+        'r2'
+        'r3';
+    }
+    .r1 {
+        grid-area: r1;
+    }
+    .r2 {
+        grid-area: r2;
+    }
+    .r3 {
+        grid-area: r3;
+    }
+    .gallery-link {
+        width: 75%;
+        transform: translateX(33%);
+        margin: 4rem 0;
+    }
+    .gallery-link::before{
+        visibility: hidden;
+    }
+    .gallery-link::after{
+        visibility: hidden;
+    }
+    .music-img {
+        width: 45vw;
+        height: 30vw;
+        border-width: 1.3rem;
+    }
+    .gallery-link:hover .music-img {
+        box-shadow: none;
+    }
+    .music-name {
+        font-size: 2rem;
+        width: 100%;
+    }
+    .music-description {
+        font-size: 1.6rem;
+        visibility: visible;
+        opacity: 1;
+        padding: 0 0 2rem 1.5rem;
+    }
+    /* ARTISTS */
+    /* .section-artists {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .01fr .5fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'logo logo'
+        'top top'
+        'w1 w2'
+        'w3 w4'
+        'w5 w6' 
+        'w7 w8'
+        'w9 w10';
+        height: 300vh;
+    } */
+    .section-artists {
+        height: 65vw;
+    }
+    .readmoretext {
+        font-size: 1.8rem;
+        line-height: 10rem;
+    }
+    .bio1 {
+        opacity: 1;
+        background-color: transparent;
+    }
+    /* CONTACT*/
+    .section-mailinglist {
+        height: 60vw;
+     }
+     /* FORM GRID WITHIN CONTACT CARD */
+     .form-container {
+         width: 55%;
+     }
+    .email-form {
+        font-size: 1.5rem;
+    }  
+    .email-sign {
+        font-size: 1.8rem;
+    }
+    /* DISCOGRAPHY */
+    .section-discography {
+        height: 90vw;
+    }
+    .disc-temporary {
+        font-size: 1.8rem;
+    }
+    .disc-more {
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+    .readmore-common {
+        font-size: 1.8rem;
+    }
+    .cd1 {
+        height: 60%;
+        width: 60%;
+        margin-left: 5%;
+    }
+    .disc-1 {
+        margin-left: 5%;
+        opacity: 1;
+        background-color: transparent;
+        height: 50%;
+    }
+    .cd2 {
+        height: 60%;
+        width: 60%;
+        margin-right: 5%;
+    }
+    .disc-2 {
+        margin-right: 5%;
+        opacity: 1;
+        background-color: transparent;
+        height: 50%;
+    }
+    /* ABOUT */
+    .section-about {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .1fr .3fr .5fr .5fr;
+        grid-template-areas: 
+        'extra extra'
+        'heading heading'
+        'c1 c2'
+        'c3 c4';
+        height: 165vw;
+    }
+    .about-logo {
+        width: 45%;
+    }
+    .about-heading {
+        margin: 8rem 0;
+    }
+    @keyframes run {
+        0% { margin-left: -160%;}
+        100%{ margin-left: 152%;}
+    }
+    .experience-btn {
+        width: 2rem;
+        height: 2rem;
+    }
+    .experience {    
+        width: 90%;
+        height: 118%
+    }
+    .experience-heading {
+        top: 15%;
+    }
+    .resume {
+        font-size: 1.7rem;
+    }
+    /* FOOTER */
+    .footer {
+        height: 30vw;
+    }
+}
+
+/* IPAD */
+@media (max-width: 815px) {
+    /* .container {
+        background-color: hotpink;
+    } */
+    /* HAMBURGER MENU */
+    .mini-logo-container {
+        padding: 3rem 0;
+    }
+    .mini-logo {
+        width: 55%;
+        padding-left: 22%;
+    }
+    .mini-nav-link {
+        font-size: 2.2rem;
+    }
+    /* MAIN */
+    .content {
+        margin-right: 2.5rem;
+    }
+    .content h3 {
+        font-size: 2.5rem;
+    } 
+    .content p {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .right {
+        font-size: 3rem;
+    }
+    .left {
+        font-size: 3rem;
+    }
+     /* NEWS */
+    .section-news {
+        grid-template-rows: .1fr 1fr .1fr;
+        height: 160vw;
+    }
+    .music-name {
+        top: 3rem;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .music-description {
+        font-size: 1.15rem;
+        visibility: visible;
+        opacity: 1;
+        padding: 0 0 2rem 1rem;
+    }
+    .more {
+        font-size: 1.8rem;
+    }
+    /* ARTSTS */
+    .section-artists {
+        height: 95vw;
+    }
+    .artists-logo {
+        margin-top: 15rem;
+    }
+    .readmoretext {
+        font-size: 1.6rem;
+        line-height: 5rem;
+    }
+    /* CONTACT */
+    .section-mailinglist {
+        height: 70vw;
+    }
+    /* FORM GRID WITHIN CONTACT CARD */
+    .form-container {
+        width: 60%;
+    }
+    .email-form {
+        font-size: 1.3rem;
+    }  
+    .email-sign {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    #success {
+        font-size: 1.5rem;
+    }
+    /* DISCOGRAPHY */
+    .disc-more {
+        width: 23%;
+        height: 4.5vw;
+    }
+    /* ABOUT */
+    .section-about {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.3fr .5fr .5fr .5fr .5fr;
+        grid-template-areas: 
+        'extra'
+        'heading'
+        'c1' 
+        'c2'
+        'c3'
+        'c4';
+        height: 350vw;
+    }
+    .about-logo {
+        width: 45%;
+    }
+    @keyframes run {
+        0% { margin-left: -150%;}
+        100%{ margin-left: 145%;}
+    }
+    .card-common {
+        width: 55%;
+        margin-left: 0;
+        justify-self: center;
+    }
+    .name {
+        font-size: 2.5rem;
+    }
+    .job-title {
+        font-size: 1.5rem;
+    }
+    .experience-heading {
+        font-size: 2.5rem;
+        top: 10%;
+    }
+    /* FOOTER */
+    .footer {
+        padding-top: 10rem;
+        height: 35vw;
+    }  
+    .footer-logo{
+        margin-top: 8rem;
+    }
+}
+
+@media (max-device-width: 640px) {
+    /* NEWS */
+    .gallery-link {
+        width: 66%;
+    }
+    .music-img {
+        border-width: 1.1rem;
+    }
+    /* ARTISTS */
+    .artists-common {
+        border-width: 1.1rem;
+    }
+    /* CONTACT */
+    .section-mailinglist {
+        height: 90vw;
+    }
+    /* DISCOGRAPHY */
+    .section-discography {
+        height: 105vw;
+    }
+    .disc-more {
+        border-width: .5rem;
+    }
+    /* ABOUT */
+    .about-logo {
+        width: 55%;
+    }
+    /* FOOTER */
+    .footer {
+        height: 40vw;
+    }
+    .decoration-footer {
+        border-top: 1.1rem double #AAACC1;
+    }
+    .footer-logo {
+        height: 5rem;
+    }
+    /* SCROLL UP BUTTON */
+     .scroll-up-btn {
+        visibility: hidden;
+    }
+}
+
+@media (max-device-width: 568px) {
+    /* .container {
+        background-color: green;
+    } */
+    /* HAMBURGER MENU */
+    .hamburger-menu {
+        height: 25px;
+        width: 30px;
+    }
+    .line {
+        height: .4rem;
+    }
+    .line-2 {
+        height: .28rem;
+    }
+    .mini-nav-link {
+        height: 9vw;
+        font-size: 1.8rem;
+    }
+    /* MAIN SECTION */
+    .main {
+        height: 60vw;
+    }
+    .slideshow-wrapper {
+        height: 100%;
+    }
+    .content {
+        margin-right: .5rem;
+    }
+    .content h3 {
+        font-size: 2rem;
+    }
+    .left {
+        font-size: 1.5rem;
+    }
+    .right {
+        font-size: 1.5rem;
+    }
+    /* NEWS */
+    .news-title {
+        font-size: 2.5rem;
+    }
+    .section-news {
+        height: 225vw;
+    }
+    .music-img {
+        border: 1rem solid #CC2026;
+        border-style: double;
+    }
+    .gallery {
+        margin-top: 0;
+        height: 150vw;
+    }
+    .gallery-link {
+        transform: translateX(25%);
+        width: 50%;
+    }
+    .music-img {
+        width: 60vw;
+        height: 40vw;
+    }
+    .music-name {
+        top: 2.9rem;
+        font-size: 1.2rem;
+        width: 100%;
+        padding-left: .5rem;
+    }
+    .music-description {
+        font-size: 1rem;
+        visibility: visible;
+        opacity: 1;
+        padding: 0 0 2rem 0;
+    }
+    /* ARTISTS */
+    .section-artists {
+        height: 100vw;
+    }
+    .artists-logo {
+        margin-top: 5rem;
+        width: 90%;
+    }
+    .artists-title {
+        margin-top: 5rem;
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+    }
+    .artists-common {
+        border: .6rem solid #AAACC1;
+        border-style: double;
+        width: 40%;
+    }
+    .readmoretext {
+        font-size: 1.2rem;
+        line-height: 5rem;
+    }
+    /* CONTACT */
+    .mail-title {
+        font-size: 2.5rem;
+    }
+    .form-container {
+        width: 80%;
+    }
+    #success {
+        font-size: 1.2rem;
+    }
+    /* DISCOGRAPHY */
+    .section-discography {
+        height: 120vw;
+    }
+    .discography-title {
+        font-size: 2.5rem;
+    }
+    .cd-common {
+        border: .5rem solid #F7941C;
+        border-style: double;
+    }
+    .cd1 {
+        width: 70%;
+        margin-left: 0;
+    }
+    .disc-1 {
+        margin-left: 0;
+        opacity: 1;
+        background-color: transparent;
+    }
+    .cd2 {
+        width: 70%;
+        margin-right: 0;
+    }
+    .disc-2 {
+        margin-right: 0;
+        opacity: 1;
+        background-color: transparent;
+    }
+    .disc-temporary {
+        font-size: 1.2rem;
+    }
+    .readmore-common {
+        font-size: 1.2rem;
+    }
+    .disc-more {
+        margin-top: 2rem;
+        font-size: 1.3rem;
+        height: 3rem;
+        width: 10rem;
+    }
+    /* ABOUT */
+    .section-about {
+        height: 375vw;
+    }
+    .about-heading {
+        font-size: 2.5rem;
+    }
+    .card-common {
+        height: 75%;
+        margin: 3rem 0;
+    }
+    .name {
+        font-size: 1.5rem;
+    }
+    .job-title {
+        font-size: 1.1rem;
+    }
+    .experience-btn {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .experience {
+        width: 87%;
+        height: 88%;
+    }
+    .experience-heading {
+        font-size: 2rem;
+    }
+    .resume {
+        font-size: 1.4rem;
+    }
+    /* FOOTER */
+    .footer-logo {
+        margin-top: 5rem;
+        height: 4rem;
+    }
+    .foot-icons a, li {
+        color: #FFFFFF;
+        font-size: 1.5rem;
+    }
+    .footer-subtitle {
+        font-size: 1rem;
+    }
+    .copyright {
+        font-size: .8rem;
+    }
+   
+}
+
+@media (max-width: 477px) {
+    /* .container {
+        background-color: grey;
+    } */
+    /* HAMBURGER MENU */
+    .mini-logo {
+        width: 65%;
+        padding-left: 19%;
+    }
+    .hamburger-menu {
+        margin-left: 88%;
+    }
+    .mini-nav-link {
+        height: 10vw;
+    }
+    /* MAIN */
+    .content1 h3 {
+        font-size: 1.4rem;
+    }
+    .content1 p {
+        font-size: 1.2rem;
+    }
+    /* NEWS */
+    .gallery-link {
+        transform: translateX(19%);
+    }
+    .music-description {
+        width: 100%;
+    }
+    /* ARTISTS */
+    .artists-common {
+        width: 50%;
+    }
+    /* CONTACT */
+    .section-mailinglist {
+        height: 100vw;
+    }
+    /* ABOUT */
+    .about-logo {
+        width: 65%;
+    }
+    .card-common {
+        width: 65%;
+    }
+    .experience {
+        width: 86%;
+        height: 86%;
+    }
+    .experience-heading {
+        font-size: 1.8rem;
+    }
+    .resume {
+        font-size: 1.2rem;
+        text-indent: .5rem;
+    }
+    /* FOOTER */
+    .footer-logo {
+        height: 3rem;
+    }
+}
+
+@media (max-width: 380px) {
+    /* .container {
+        background-color: goldenrod;
+    } */
+    .hamburger-menu {
+        margin-left: 86%;
+    }
+    /* MAIN */
+    .main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'empT empT'
+        'center center'
+        'botL botR';
+    }
+    .slideshow-wrapper {
+        width: 92%;
+        margin-left: 2.5%;
+        height: 120%;
+    }
+    .content h3 {
+        font-size: 1.6rem;
+    }
+    .content p {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .left {
+        grid-area:botL;
+        padding: 1rem;
+        transform: translateX(22%) translateY(100%);
+        
+    }
+    .right {
+        width: 50%;
+        grid-area: botR;
+        padding: 1rem;
+        transform: translateX(-15%) translateY(100%);
+    }
+    /* NEWS */
+    .news-title {
+        font-size: 2.5rem;
+    }
+    .section-news {
+        height: 260vw;
+    }
+    .music-img {
+        border: .8rem solid #CC2026;
+        border-style: double;
+    }
+    .music-img {
+        width: 70vw;
+        height: 50vw;
+    }
+    .gallery-link {
+        transform: translateX(0%);
+    }
+    /* ARTISTS */
+    .section-artists {
+        height: 110vw;
+    }
+    .artists-logo {
+        width: 100%;
+    }
+    @keyframes run {
+        0% { margin-left: -150%;}
+        100%{ margin-left: 165%;}
+    }
+    .artists-common {
+        width: 55%;
+    }
+    /* CONTACT */
+    .section-mailinglist {
+        height: 130vw;
+    }
+    /* DISCOGRAPHY */
+    .cd-common {
+        height: 55%;
+    }
+    /* ABOUT */
+    .section-about {
+        height: 500vw;
+    }
+    .about-logo {
+        padding-top: 3rem;
+    }
+    .about-heading {
+        margin: 5rem 0;
+    }
+    .card-common {
+        height: 90%;
+    }
+    .experience {
+        width: 83%;
+        height: 79%;
+    }
+    .experience-heading {
+        font-size: 1.6rem;
+    }
+    .resume {
+        font-size: 1.1rem;
+    }
+    /* FOOTER */
+    .footer {
+        padding: 2rem 0;
+        margin-top: 10rem;
+    }
+    .decoration-footer {
+        border-top: .7rem double #AAACC1;
+    }
+    .footer-logo {
+        margin-top: 4rem;
+    }
+}
+/* IPHONE 5 */
+  @media (max-width: 330px) {
+    /* .container {
+        background-color: #FF5E00;
+    } */
+    /* HAMBURGER MENU */
+    .hamburger-menu {
+        height: 20px;
+        width: 24px;
+        margin-left: 85%;
+    }
+    .line {
+        height: .3rem;
+    }
+    .line-2 {
+        height: .2rem;
+    }
+    .mini-nav-link {
+        height: 9vw;
+    }
+    .mini-logo {
+        padding-left: 17%;
+    }
+    /* SLIDESHOW */
+    .main {
+        width: 97%;
+    }
+    /* NEWS */
+    .music-name {
+        font: 1.2rem;
+    }
+    /* NEWS */
+    .section-news {
+        height: 280vw;
+    }
+    .music-name {
+        top: 1.9rem;
+    }
+    .music-description {
+        left: 1.5rem;
+        bottom: 1vw;
+        padding-bottom: 1rem;
+        width: 110%;
+    }
+    .section-discography {
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr 1fr 1fr .5fr;
+        grid-template-areas: 
+        'head'
+        'cd1'
+        'cd2'
+        'button';
+        height: 250vw;
+    }
+    .cd-common {
+        width: 55%;
+        height: 60%;
+        margin-top: 3rem;
+    }
+    .cd1 {
+        padding: 2rem 0;
+    }
+    .cd2 {
+        padding: 2rem 0;
+    }
+    /* ARTISTS */
+    .section-artists {
+        height: 120vw;
+    }
+    .artists-common {
+        width: 60%;
+    }
+    /* CONTACT */
+    .section-mailinglist {
+      height: 150vw;
+      transform: translateX(-2%);
+    }
+    .form-container {
+        width: 91%;
+    }
+    /* DISCOGRAPHY */
+    .section-discography {
+        transform: translateX(-2%);
+    }
+    .cd-common {
+        width: 75%;
+        height: 70%;
+    }
+    .disc-more {
+        margin-top: 1rem;
+        height: 2.5rem;
+        width: 8rem;
+        border-width: .2rem;
+    }
+    /* ABOUT */
+    .section-about {
+        /* height: 750vw; */
+        margin: 0;
+    }
+    .about-logo {
+        margin-top: 5rem;
+    }
+    .card-common {
+        width: 70%;
+        margin-right: 1rem;
+    }
+    .name {
+        font-size: 1.3rem;
+    }
+    .experience-btn {
+        height: 1.2rem;
+        width: 1.2rem;
+    }
+    .experience {
+        height: 82%;
+        width: 85%;
+    }
+    .resume {
+        font-size: 1.3rem;
+    }
+    /* FOOTER */
+    .footer {
+        height: 50vw;
+    }
+    .footer-logo {
+        height: 3rem;
+    }
+}
+@media (max-width: 299px) {
+    /* .container {
+        background-color: aquamarine;
+    } */
+    .hamburger-menu {
+        margin-left: 84%;
+    }
+    /* SLIDESHOW */
+    .main {
+        width: 95%;
+    }
+    /* NEWS */
+    .gallery {
+        margin-right: 7%;
+    }
+    /* ARTISTS */
+    .section-artists {
+        height: 130vw;
+    }
+    /* CONTACT */
+    .section-mailinglist {
+        transform: translateX(-4%);
+    }
+    
+}
+    
