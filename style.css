@@ -1463,7 +1463,7 @@ button:hover {
         padding-top: 3rem;
     }
     .mini-contact input {
-        padding: .5rem;
+        /* padding: .5rem; */
         margin: .5rem;
         font-size: .9rem;
     }
@@ -1863,15 +1863,19 @@ button:hover {
     .modal-content {
         transform: translateX(23%);
     }
+    .modal-content h3, p {
+        padding: 1rem 0;
+    }
     .modal-content h3 {
-        font-size: 1.2rem;
+        /* font-size: 1.2rem; */
     }
     .modal-content p {
-        font-size: 1rem;
-        line-height: 1.4rem;
+        /* font-size: 1rem;
+        line-height: 1.4rem;  */
     }
     .modal-content form {
-        font-size: 1.2rem;
+        /* font-size: 1.2rem;
+        padding: 0; */
         padding: 0;
     }
     /* UPDATES FORM */
@@ -1879,8 +1883,8 @@ button:hover {
         left: 10%;
     }
     .modal-content2 h3 {
-        font-size: 1.2rem;
-        padding-top: 2.5rem;
+        /* font-size: 1.2rem;
+        padding-top: 2.5rem; */
     }
 }
 
@@ -2050,18 +2054,20 @@ button:hover {
     }
     /* MODAL POPUP */
     .modal-content h3 {
-        font-size: 1.2rem;
+        /* font-size: 1.2rem; */
     }
     .modal-content p {
-        font-size: .9rem;
-        line-height: 1.2rem;
+        /* font-size: .9rem;
+        line-height: 1.2rem; */
+        line-height: 1.4rem;
+        font-size: 1.3rem;
     }
     .modal-content form {
-        font-size: 1rem;
+        /* font-size: 1rem; */
     }
     /* UPDATES FORM */
     .modal-content2 h3 {
-        padding-top: 2rem;
+        /* padding-top: 2rem; */
     }
 }
 
