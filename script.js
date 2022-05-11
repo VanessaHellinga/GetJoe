@@ -3,6 +3,58 @@ document.querySelector('.hamburger-menu').addEventListener('click', () => {
   document.querySelector('.mini-nav').classList.toggle('change');
 })
 
+// Get the modal
+var modal = document.getElementById("myModal");
+
+var modal2 = document.getElementById("myModal-2");
+
+//Delay popup loading time
+setTimeout(function() {
+        modal.style.display = "block";
+        modal2.style.display = "none";  
+}, 2000);
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+var span2 = document.getElementsByClassName("close2")[0];
+
+//Get the <input> element that says Yes
+var inputYes = document.getElementsByClassName("inputYes")[0];
+
+//Get the <input> element that says No, closes the modal
+var inputNo = document.getElementsByClassName("inputNo")[0];
+
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+//When the user clicks on <span> (x), close the modal
+span2.onclick = function() {
+    modal2.style.display = "none";
+    modal.style.display = "none";
+}
+
+//When the user clicks <input> No, close the modal
+inputNo.onclick = function() {
+    modal.style.display = "none";
+}
+
+//When the user clicks on <input> Yes, opens contact form
+inputYes.onclick = function () {
+    modal2.style.display = "block";
+    // modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
 
 //MENU SHRINK ON SCROLL
 
@@ -15,7 +67,7 @@ function scrollFunction() {
     document.getElementById ("header").style.paddingBottom = "2rem";
     document.getElementById("invisible-home-link").style.fontSize = "99%";
     document.getElementById("change-logo").style.width = "80%";
-    document.getElementById("change-logo").style.marginBottom = "2rem";
+    document.getElementById("change-logo").style.paddingBottom = "2rem";
    
     document.getElementById("change-heading").style.display = "none";
     // document.getElementById("navbar-icons").style.paddingBottom = "1rem";
@@ -37,7 +89,8 @@ function scrollFunction() {
     document.getElementById ("header").style.paddingBottom = "0";
     document.getElementById("invisible-home-link").style.fontSize = "4rem";
     document.getElementById("change-logo").style.width = "100%";
-    document.getElementById("change-logo").style.paddingBottom = "0";
+    document.getElementById("change-logo").style.paddingBottom = "2rem";
+    document.getElementById("change-logo").style.paddingTop = "2rem"
  
     document.getElementById("change-heading").style.display = "block";
     // document.getElementById("navbar-icons").style.marginBottom = "0";
@@ -152,6 +205,38 @@ function ajax(method, url, data, success, error) {
   };
   xhr.send(data);
 }
+
+// mini form
+window.addEventListener("DOMContentLoaded", function () {
+  // get the form elements defined in your form HTML above
+
+  var form = document.getElementById("my-mini-form");
+  // var button = document.getElementById("my-form-button");
+  var status = document.getElementById("mini-status");
+
+  // Success and Error functions for after the form is submitted
+
+  function success() {
+    form.reset();
+    status.classList.add("success");
+    status.innerHTML = "Thanks!";
+  }
+
+  function error() {
+    status.classList.add("error");
+    status.innerHTML = "Oops! There was a problem.";
+  }
+
+  // handle the form submission event
+
+  form.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var data = new FormData(form);
+    ajax(form.method, form.action, data, success, error);
+  });
+});
+
+
 
 
 

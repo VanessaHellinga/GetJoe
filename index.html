@@ -28,10 +28,10 @@
             <li class="navbar-links"><a href="index.html#news" id="change-links-news">News</a></li>
             <li class="navbar-links"><a href="index.html#artists" id="change-links-artists">Artists</a></li>
             <li class="navbar-links"><a href="index.html#discography" id="change-links-music">Music</a></li>
-            <li class="navbar-links"><a href="index.html#about" id="change-links-about">About &dtrif;</a>
+            <li class="navbar-links"><a href="#" id="change-links-about">About &dtrif;</a>
               <ul>
-                <li><a href="#0">About Get Joe</a></li>
-                <li><a href="#0">Our Mission</a></li>
+                <li><a href="index.html#about-title">About Get Joe</a></li>
+                <li><a href="index.html#mission">Our Mission</a></li>
               </ul>
             </li>
             <li class="navbar-links"><a href="index.html#team" id="change-links-team">Our Team</a></li>
@@ -78,7 +78,10 @@
                         <a href='index.html#discography' class='mini-nav-link'>Music</a>
                     </li>
                     <li>
-                        <a href='index.html#about' class='mini-nav-link'>About</a>
+                        <a href='index.html#about' class='mini-nav-link'>About Get Joe</a>
+                    </li>
+                    <li>
+                        <a href='index.html#mission' class='mini-nav-link'>Our Mission</a>
                     </li>
                     <li>
                         <a href='index.html#team' class='mini-nav-link'>Our Team</a>
@@ -188,7 +191,29 @@
         <img class="about-logo" src="images/GJPR Text only-no-background.png">
         <h1 class="about-heading">Great Music is Our Passion<br>
         <span class="about-sub-heading">& We Have A Lot of Passion</span></h1>
-        <p class="mission">Our mission is to create a tremendous amount of world class content and distribute it though innovative and disruptive channels to our customers. 
+        <h3 class="about-title" id="about-title">About Get Joe</h3>
+            <p class="about-text">GET JOE Records was formed in 2021 by three music industry veterans 
+                (Len Snow, Dave Fowler, and Kent Wells) with nearly a century of combined award-winning 
+                experience in songwriting, publishing, musicianship, production, talent acquisition, 
+                tour management, and business.
+                <br><br>
+                GET JOE Records is a boutique record label and production company based out of Dallas, 
+                TX, whose sole mission (and passion) is to distribute world-class content by world-renowned 
+                musical artists to fans across the globe utilizing cutting-edge technology and innovative 
+                techniques backed by the industry’s “best practices.” For more information on GET JOE Records, 
+                please follow the <a href="index.html#contact">link</a> or call (404) 202-1838.</p>
+        <h3 class="about-title">Our Mission</h3>
+
+        <p class="about-text" id="mission">What drives the common Joe? Beyond the demands of our 9-to-5 that keep the wolf 
+            from our door and three squares on the table, we live for those moments in life when we can explore 
+            our personal passions--like hitting the links for a round of golf, tossing a line in the water, 
+            or popping a cold one or two and hanging out with friends. We love it even when we hate it because 
+            it’s the place where we are the happiest. We get it, Joe.
+            <br><br>
+            At Get Joe Records, great music is our passion…and we have A LOT of passion. We are a boutique 
+            record label and production company whose sole mission (and passion) is to distribute world-class 
+            artists’ content to their fans through the most innovative and disruptive channels possible, so we 
+            can interrupt your daily routine and help you find your happy place.
         </p>
     </section>
 
@@ -325,6 +350,48 @@
         <a href="index.html#home" class="scroll-up-btn hide" id="chevron-btn">
             <i class="fas fa-chevron-up"></i>
         </a>
+
+
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Welcome to Get Joe!</h3>
+      <p>We already have something in common...
+          <br>
+          A PASSION FOR GREAT MUSIC
+          <br>
+          Give us your info and we'll send you the 4-1-1 on upcoming
+          banger releases and concerts by GET JOE'S incredible artists...
+          <br>
+          ... and don't worry we'll keep your info on the down-low!!!
+          <span class="italic">(we won't sell or share your info with anyone)</span>
+      </p>
+      <br>
+      <form>
+          <input class="inputYes" type="radio" name="yes_no"> YES...send me updates! (I just can't get enuf!)</input>
+          <br><br>
+          <input class="inputNo" type="radio" name="yes_no"> NO...I'd prefer to endlessly whine and complain when all my friends have better music and concert tickets than I do!</input>
+      </form> 
+  </div>
+  
+  
+  <div id="myModal-2" class="modal-content2">
+      <span class="close2">&times;</span>
+      <h3>Sign Up for<br><span class="red">GET JOE</span> Updates</h3>
+      <form class="mini-contact" action="https://formspree.io/f/xzboyzoy" method="POST" id="my-mini-form">
+          <input class="popup-form" type="text" name="firstName" placeholder="First Name">
+          <input class="popup-form" type="text" name="lastName" placeholder="Last Name">
+          <input class="popup-form" type="email" name="email" placeholder="Email">
+          <br>
+          <input class="popup-send" type="submit" value="Send">
+          
+      <div id="mini-status"></div>
+      </form>
+  </div>
+  
 
 
     <script src="script.js"></script>
