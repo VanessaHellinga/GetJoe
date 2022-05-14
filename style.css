@@ -1798,6 +1798,9 @@ button:hover {
         width: 55vw;
         height: 40vw;
     }
+    .music-description {
+        padding: 1rem 4rem;
+    }
     /* NEWS */
     .gallery-link {
         margin: 1.5rem 0;
