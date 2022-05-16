@@ -388,14 +388,67 @@ button:hover {
 
 
 /* NEWS */
+
 .section-news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+.news-title {
+    grid-area: title;
+    color: #FFFFFF;
+    text-align: center;
+    align-self: center;
+    font-weight: 900;
+    letter-spacing: .1rem;
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+
+.apb-img {
+    width: 70%;
+    border: .5rem double #CC2026;
+}
+
+.apb-heading {
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: .1rem;
+}
+
+.apb-text {
+    color:#FFFFFF;
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    line-height: 3rem;
+    width: 90%;
+    padding: 0 5rem;
+}
+
+.apb-text a {
+    color: #AAACC1;
+}
+
+.apb-text:hover a {
+    color: #F7941C;
+}
+
+
+
+
+
+
+/* .section-news {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: .1fr .9fr;
     grid-template-areas: 
     'title'
     'photo';
-    /* 'more' */
     height: 45vw;
     margin: 5rem 0;
     border-bottom: .5rem double #F7941C;
@@ -482,7 +535,7 @@ button:hover {
     text-transform: uppercase;
     letter-spacing: .2rem;
     color: #FFFFFF;
-    /* width: 0; */
+    
     overflow: hidden;
     font-size: 1.5rem;
 }
@@ -495,7 +548,6 @@ button:hover {
     position: absolute;
     bottom: 3vw;
     left: -7%;
-    /* width: 70%; */
     font-size: 1rem;
     text-align: start;
     letter-spacing: .1rem;
@@ -526,7 +578,7 @@ button:hover {
 
 .more a:hover {
     color:#F7941C;
-}
+} */
 
 
 
@@ -542,7 +594,12 @@ button:hover {
     'w1';
     height: 65vw;
     width: 100vw;
-    padding: 10rem 0;
+    /* padding: 10rem 0; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; */
 }
 
 .artists-logo {
@@ -719,7 +776,7 @@ button:hover {
 }
 
 .about-text a {
-    color: #FFFFFF;
+    color: #AAACC1;
 }
 
 .about-text:hover a {
@@ -1289,7 +1346,7 @@ button:hover {
         font-size: 1.5rem;
     }
     /* NEWS */
-    .music-name {
+    /* .music-name {
         font-size: 1.2rem;
     }
     .gallery-link::after{
@@ -1297,7 +1354,7 @@ button:hover {
     }
     .music-description {
         font-size: .8rem;
-    }
+    } */
     /* TEAM CARDS */
     .section-team {
         grid-template-columns: 1fr 1fr;
@@ -1411,15 +1468,21 @@ button:hover {
 }
 
 @media screen and (max-width: 811px) {
+    /* NEWS */
+    .apb-text {
+        width: 100%;
+        padding: 0;
+        font-size: 1.9rem;
+    }
    /* ABOUT */
    .about {
-       padding-bottom: 6rem;
+        padding-bottom: 6rem;
    }
    .about-text {
-       width: 100%;
-       padding: 0;
-       text-align: center;
-       font-size: 1.9rem;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        font-size: 1.9rem;
    }
    /* TEAM */
    .resume {
@@ -1558,7 +1621,12 @@ button:hover {
         justify-self: end;
     }
     /* NEWS */
-    .section-news {
+    .apb-heading {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+    /* NEWS */
+    /* .section-news {
         grid-template-rows: .1fr 1fr .1fr;
         height: 150vw;
         margin: 5rem 0;
@@ -1609,7 +1677,7 @@ button:hover {
         visibility: visible;
         opacity: 1;
         padding-bottom: 1rem;
-    }
+    } */
     /* ARTISTS */
     .section-artists {
         padding: 5rem 0;
@@ -1676,9 +1744,9 @@ button:hover {
 
 @media screen and (max-width: 645px) {
     /* NEWS */
-    .section-news {
+    /* .section-news {
         height: 160vw;
-    }
+    } */
     /* MUSIC */
     .cd1 {
         margin-left: 5rem;
@@ -1713,8 +1781,18 @@ button:hover {
         height: 65vw;
     }
     /* NEWS */
-    .section-news {
+    /* .section-news {
         height: 180vw;
+    } */
+    /* NEWS */
+    .apb-img {
+        width: 85%;
+    }
+     .apb-heading {
+        width: 80%;
+    }
+    .apb-text {
+        font-size: 1.8rem;
     }
     /* ARTISTS */
     .section-artists {
@@ -1790,8 +1868,12 @@ button:hover {
     .mini-nav-link {
         padding: .5rem 0;
     }
+   /* NEWS */
+   .apb-heading {
+        padding-bottom: 1.5rem;
+    }
     /* NEWS */
-    .section-news {
+    /* .section-news {
         border-bottom: none;
     }
     .music-img {
@@ -1801,10 +1883,9 @@ button:hover {
     .music-description {
         padding: 1rem 4rem;
     }
-    /* NEWS */
     .gallery-link {
         margin: 1.5rem 0;
-    }
+    } */
     /* ARTISTS */
     .section-artists {
         padding-top: 5rem;
@@ -1911,12 +1992,16 @@ button:hover {
         padding: 0;
     }
     /* NEWS */
-    .music-name {
+    .apb-heading {
+        font-size: 1.6rem;
+    }
+    /* NEWS */
+    /* .music-name {
         font-size: 1.3rem;
     }
     .music-description {
         font-size: 1rem;
-    }
+    } */
     /* ARTISTS */
     .artists-common {
         width: 55%;
@@ -2061,7 +2146,7 @@ button:hover {
         height: 75vw;
     }
     /* NEWS */
-    .music-img {
+    /* .music-img {
         border-width: .5rem;
     }
     .music-name {
@@ -2070,7 +2155,7 @@ button:hover {
     .music-description {
         font-size: .9rem;
         left: 1rem;
-    }
+    } */
     /* ARTISTS */
     .artists-common {
         border-width: .5rem;
@@ -2159,14 +2244,14 @@ button:hover {
         height: 0.1rem;
     }
     /* NEWS */
-    .section-news {
+    /* .section-news {
         margin-top: 2rem;
         margin-bottom: 10rem;
     }
     .music-img {
         width: 60vw;
         height: 45vw;
-    }
+    } */
     /* ARTIST */
     .artists-common {
         width: 90%;
