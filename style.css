@@ -585,7 +585,7 @@ button:hover {
 
 /* ARTISTS 1 */
 .section-artists {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: .5fr .5fr .5fr;
     grid-template-areas: 
@@ -593,17 +593,17 @@ button:hover {
     'title'
     'w1';
     height: 65vw;
-    width: 100vw;
+    width: 100vw; */
     /* padding: 10rem 0; */
-    /* display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%; */
+    width: 100%;
+    padding-bottom: 5rem;
 }
 
 .artists-logo {
-    grid-area: logo;
     width: 50%;
     justify-self: center;
     animation: fade-in 6s;
@@ -615,7 +615,6 @@ button:hover {
 }
 
 .artists-title {
-    grid-area: title;
     color: #FFFFFF;
     text-align: center;
     align-self: center;
@@ -632,13 +631,28 @@ button:hover {
     border: solid 1rem #AAACC1;
     border-style: double;  
     margin: 5rem;
-    width: 30%;
+    width: 40%;
 }
 
-
-.w1 {
-    grid-area: w1;
+.artist-text {
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
 }
+
+.artist-link {
+    color: #AAACC1;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.artist-link:hover {
+    color: #F7941C;
+}
+
 
 /* MUSIC*/
 .section-discography {
