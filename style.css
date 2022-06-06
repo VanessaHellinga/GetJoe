@@ -81,7 +81,7 @@ html {
     padding-right: 2rem;
 }
 .icons:hover a{
-    color: #CC2026;
+    color: #8ED8F8;
 }
 .menu {
     list-style-type: none;
@@ -109,7 +109,7 @@ ul li ul {
     display: flex;
     flex-direction: column;
     margin: 3rem 0;
-    background: linear-gradient(100deg, #F7941C, #ffa91b);
+    background: #0000FF;
     border-radius: .5rem;
     transition: opacity 0.2s, visibility 0.2s;
     z-index: 99;
@@ -127,7 +127,7 @@ ul li:hover {
     border-bottom: 2px solid #e02a21;  */
 }
 .navbar-links:hover a {
-    color:#CC2026;
+    color: #8ED8F8;
     transform: translateY(-.5rem);
 }
 ul li:hover ul {
@@ -209,7 +209,7 @@ ul li:hover ul {
 .line {
     width: inherit;
     height: .5rem;
-    background-color: #CC2026;
+    background-color: #8ED8F8;
     border-radius: 25px;
     transform-origin: right;
     transition: transform .5s;
@@ -267,7 +267,7 @@ ul li:hover ul {
 }
 
 .mini-nav-link:hover {
-    color: #CC2026; 
+    color: #8ED8F8; 
     font-weight: 700;
     letter-spacing: .1rem;
 }
@@ -286,7 +286,7 @@ ul li:hover ul {
 }
 
 .hamburger-icons:hover a {
-    color: #CC2026;
+    color: #8ED8F8;
 }
 
 
@@ -309,7 +309,7 @@ ul li:hover ul {
     background-color: #0A0405;
     position: relative;
     overflow: hidden;
-    border: .2rem solid #CC2026;
+    /* border: .2rem solid #E2F4FE; */
 }
 
 .slide {
@@ -318,21 +318,21 @@ ul li:hover ul {
 }
 
 .slide:nth-child(1) {
-    background: linear-gradient(-100deg, rgba(38, 38, 38, 1), rgba(38, 38, 38, .8), transparent), url() center no-repeat;
+    background: linear-gradient(-100deg, rgba(38, 38, 38, .8), rgba(38, 38, 38, .5), transparent), url() center no-repeat;
     background-size: cover;
-    background-color: #CC2026;  
+    background-color: #0000FF;  
 } 
 
 .slide:nth-child(2) {
-    background: linear-gradient(-100deg, rgba(38, 38, 38, 1), rgba(38, 38, 38, .8), transparent), url() center no-repeat;
+    background: linear-gradient(-100deg, rgba(38, 38, 38, .8), rgba(38, 38, 38, .5), transparent), url() center no-repeat;
     background-size: cover;
-    background-color: #F7941C;
+    background-color: #8ED8F8;
 }
 
 .slide:nth-child(3) {
-    background: linear-gradient(-100deg, rgba(38, 38, 38, 1), rgba(38, 38, 38, .8), transparent), url() center no-repeat;
+    background: linear-gradient(-100deg, rgba(38, 38, 38, .8), rgba(38, 38, 38, .5), transparent), url() center no-repeat;
     background-size: cover;
-    background-color: #AAACC1;
+    background-color: #E2F4FE;
 }
 
 .content {
@@ -410,7 +410,7 @@ button:hover {
 
 .apb-img {
     width: 70%;
-    border: .5rem double #CC2026;
+    border: .5rem double #E2F4FE;
 }
 
 .apb-heading {
@@ -434,7 +434,7 @@ button:hover {
 }
 
 .apb-text:hover a {
-    color: #F7941C;
+    color: #8ED8F8;
 }
 
 
@@ -628,7 +628,7 @@ button:hover {
     border-radius: 50%;
     justify-self: center;
     align-self: center;
-    border: solid 1rem #AAACC1;
+    border: solid .7rem #E2F4FE;
     border-style: double;  
     margin: 5rem;
     width: 40%;
@@ -650,7 +650,7 @@ button:hover {
 }
 
 .artist-link:hover {
-    color: #F7941C;
+    color: #8ED8F8;
 }
 
 
@@ -679,7 +679,7 @@ button:hover {
 }
 
 .music-temporary {
-    color: #ee2a31;
+    color: #3636ff;
     grid-area: temp;
     text-align: center;
     font-size: 1.5rem;
@@ -690,7 +690,7 @@ button:hover {
     height: 60%;
     justify-self: center;
     align-self: center;
-    border: solid .8rem #CC2026;
+    border: solid .6rem #3636ff;
     border-style: double;
     background-color: transparent;
 }
@@ -769,7 +769,7 @@ button:hover {
 
 .about-sub-heading {
     font-size: 3rem;
-    color: #F7941C;
+    color: #8ED8F8;
 }
 
 .about-title {
@@ -794,7 +794,7 @@ button:hover {
 }
 
 .about-text:hover a {
-    color: #F7941C;
+    color: #8ED8F8;
 }
 
 /* OUR TEAM */
@@ -807,7 +807,7 @@ button:hover {
     'card1 card2 card3';
     height: 60vw;
     width: 100vw;
-    background-color: #CC2026;
+    background-color: #3636ff;
     padding-bottom: 10rem;
 }
 
@@ -1019,7 +1019,7 @@ button:hover {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: .1rem;
-    background-color: #CC2026;
+    background-color: #3636ff;
     color: #FFFFFF;
     border: none;
     border-radius: .5rem;
@@ -1027,7 +1027,7 @@ button:hover {
 }
 
 .email-sign:hover {
-    background-color: #ee2a31;
+    background-color: #0000FF;
 }
 
 #status {
@@ -1047,7 +1047,7 @@ button:hover {
 }
 
 #status.error {
-    color: #CC2026;
+    color: #0000FF;
     animation: status;
     animation-duration: 5s;
     animation-delay: 0s;
@@ -1102,7 +1102,7 @@ button:hover {
 }
 
 .foot-icons a:hover {
-    color: #ee2a31;
+    color: #0000FF;
 }
 
 .footer-subtitle {
@@ -1127,14 +1127,14 @@ button:hover {
 }
 
 .self:hover {
-    color: #F7941C;
+    color: #8ED8F8;
 }
 
 /* SCROLL UP BTN */
 .scroll-up-btn {
     width: 4rem;
     height: 4rem;
-    background-color: #CC2026;
+    background-color: #0000FF;
     text-decoration: none;
     position: fixed;
     bottom: 5rem;
@@ -1150,8 +1150,8 @@ button:hover {
 }
 
 .scroll-up-btn:hover {
-    background-color: #ee2a31;
-    border: .1rem solid #CC2026;
+    background-color: #3636ff;
+    border: .1rem solid #0000FF;
 }
 
 .hide {
@@ -1193,7 +1193,7 @@ button:hover {
 }
 
 .modal-content h3 {
-    color: #CC2026;
+    color: #0000FF;
     font-size: 4rem;
 }
 
@@ -1239,7 +1239,7 @@ button:hover {
 }
 
 .red {
-      color: #CC2026;
+      color: #0000FF;
 }
 
 .mini-contact input {
@@ -1251,7 +1251,7 @@ button:hover {
 .popup-send {
     font-weight: 700;
     letter-spacing: .1rem;
-    background-color: #CC2026;
+    background-color: #0000FF;
     color: #FFFFFF;
     border: none;
     border-radius: .5rem;
@@ -1259,7 +1259,7 @@ button:hover {
 }
 
 .popup-send:hover {
-    background-color: #ee2a31;
+    background-color: #0000FF;
 }
   
 /* The Close Button */
@@ -1287,7 +1287,7 @@ button:hover {
 }
 
 #mini-status.error {
-    color: #CC2026;
+    color: #0000FF;
     text-align: center;
     animation: mini-status 1s ease forwards;
 }
@@ -1567,6 +1567,11 @@ button:hover {
     .right {
         font-size: 2rem;
     }
+    /* NEWS */
+    .apb-heading {
+        font-size: 2.3rem;
+        padding-bottom: 1rem;
+    }
     /* TEAM */
     .section-team {
         height: 130vw;
@@ -1639,59 +1644,6 @@ button:hover {
         font-size: 2rem;
         padding-bottom: 1rem;
     }
-    /* NEWS */
-    /* .section-news {
-        grid-template-rows: .1fr 1fr .1fr;
-        height: 150vw;
-        margin: 5rem 0;
-    }
-    .gallery {
-        grid-area: photo;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-        'r1'
-        'r2'
-        'r3';
-        padding-bottom: 5rem;
-    }
-    .r1 {
-        grid-area: r1;
-    }
-    .r2 {
-        grid-area: r2;
-    }
-    .r3 {
-        grid-area: r3;
-    }
-    .gallery-link {
-        justify-self: center; 
-        margin: 4rem 0;
-    }
-    .gallery-link::before{
-        visibility: hidden;
-    }
-    .gallery-link::after{
-        visibility: hidden;
-    }
-    .music-img {
-        width: 45vw;
-        height: 30vw;
-    }
-    .gallery-link:hover .music-img {
-        box-shadow: none;
-    }
-    .music-name {
-        font-size: 1.5rem;
-        width: 100%;
-    }
-    .music-description {
-        font-size: 1.2rem;
-        visibility: visible;
-        opacity: 1;
-        padding-bottom: 1rem;
-    } */
     /* ARTISTS */
     .section-artists {
         padding: 5rem 0;
@@ -1757,10 +1709,6 @@ button:hover {
 }
 
 @media screen and (max-width: 645px) {
-    /* NEWS */
-    /* .section-news {
-        height: 160vw;
-    } */
     /* MUSIC */
     .cd1 {
         margin-left: 5rem;

@@ -8,11 +8,14 @@ var modal = document.getElementById("myModal");
 
 var modal2 = document.getElementById("myModal-2");
 
-//Delay popup loading time
-setTimeout(function() {
+
+
+// Delay popup loading time
+var display = setTimeout(function() {
         modal.style.display = "block";
         modal2.style.display = "none";  
 }, 2000);
+
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
